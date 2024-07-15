@@ -6,23 +6,636 @@
     <title>Pixmart</title>
 </head>
 <body>
-    <header>
-        <load src="./src/partials/header.html" />
+    <header class="header">
+        <div class="container">
+            <a href="#" id="homepage">
+                Pixmart.
+            </a>
+            <nav class="header-navigation">
+                <ul class="header-navigation-list">
+                    <li class="header-navigation-item">
+                        <a href="#">About</a>
+                    </li>
+                    <li class="header-navigation-item">
+                        <a href="#">
+                            Products
+                        </a>
+                    </li>
+                    <li class="header-navigation-item">
+                        <a href="#">
+                            Creators
+                            <sup class="header-navigation-item-superscript">new</sup>
+                        </a>
+                    </li>
+                    <li class="header-navigation-item">
+                        <a href="#">Blog</a>
+                    </li>
+                    <li class="header-navigation-item">
+                        <a href="#">Contact</a>
+                    </li>
+                </ul>
+                <ul class="header-actions">
+                    <li class="header-actions-login">
+                        <button class="header-actions-button" type="button">
+                            <img src="../img/" alt="login_icon">
+                        </button>
+                    </li>
+                    <li class="header-actions-cart">
+                        <button class="header-actions-button" type="button">
+                            <img src="../img/" alt="cart_icon">
+                        </button>
+                    </li>
+                </ul>
+            </nav>
+        </div>
     </header>
-    <main>
-        <load src="./src/partials/hero.html" />
-        <load src="./src/partials/categories.html" />
-        <load src="./src/partials/rending.html" />
-        <load src="./src/partials/promo.html" />
-        <load src="./src/partials/categories.html" />
-        <load src="./src/partials/staff-picks.html" />
-        <load src="./src/partials/faq.html" />
-        <load src="./src/partials/blog.html" />
-        <load src="./src/partials/cta.html" />
+    <main class="page-content">
+        <section class="hero-section" id="about-us">
+            <div class="container">
+                <div class="hero-describe-part">
+                    <h1 class="hero-title">Ignite Your Creativity
+                        with <span class="accent">Premium</span> Designs
+                    </h1>
+                    <p class="hero-text">
+                        Discover, explore, and purchase the finest digital design assets that is tailored for your needs, all within our platform.
+                    </p>
+                    <div class="search-bar">
+                        <input class="search-bar-input" type="text">
+                        <button class="search-bar-btn" type="button">Search Now</button>
+                    </div>
+                </div>
+                <div class="hero-images-part">
+                    <img src="../img/" alt="big_img">
+                    <img src="../img/" alt="medium_img">
+                    <img src="../img/" alt="small_img">
+                    <div class="hero-sum-info">
+                        <p class="hero-sum-info-num">10,000+</p>
+                        <p class="hero-sum-info-text">Digital Design Assets</p>
+                    </div>
+        
+                </div>
+            </div>
+        </section>
+        <section class="categories-section">
+            <div class="container">
+                <h2 class="categories-title">CATEGORIES</h2>
+                <p class="categories-subtitle">What are You
+                    Looking For Here?
+                </p>
+                <ol class="categories-list">
+                    <li class="categories-item">
+                        <a href="#" class="categories-link">
+                            <img src="../img/" alt="img_UI Kits Design" class="categories-img">
+                            <p class="categories-number">/ 01</p>
+                            <h3 class="categories-card-title">UI Kits Design</h3>
+                        </a>
+                    </li>
+                    <li class="categories-item">
+                        <a href="#">
+                            <img src="../img/" alt="img_Social Media" class="categories-img">
+                            <p class="categories-number">/ 02</p>
+                            <h3 class="categories-card-title">Social Media</h3>
+                        </a>
+                    </li>
+                    <li class="categories-item">
+                        <a href="#">
+                            <img src="../img/" alt="img_Font Design" class="categories-img">
+                            <p class="categories-number">/ 03</p>
+                            <h3 class="categories-card-title">Font Design</h3>
+                        </a>
+                    </li>
+                    <li class="categories-item">
+                        <a href="#">
+                            <img src="../img/" alt="img_PPT Slides" class="categories-img">
+                            <p class="categories-number">/ 04</p>
+                            <h3 class="categories-card-title">PPT Slides</h3>
+                        </a>
+                    </li>
+                    <li class="categories-item">
+                        <a href="#">
+                            <img src="../img/" alt="img_Illust Design" class="categories-img">
+                            <p class="categories-number">/ 05</p>
+                            <h3 class="categories-card-title">Illust Design</h3>
+                        </a>
+                    </li>
+                    <li class="categories-item">
+                        <a href="#">
+                            <img src="../img/" alt="img_Print Template" class="categories-img">
+                            <p class="categories-number">/ 06</p>
+                            <h3 class="categories-card-title">Print Template</h3>
+                        </a>
+                    </li>
+                </ol>
+            </div>
+        </section>
+        <section class="trending-section">
+            <div class="container">
+                <h2 class="trending-title">TRENDING</h2>
+                <p class="trending-subtitle">Popular Products</p>
+                <div class="trending-scrollbar">
+                    <button type="button" class="trending-prev-button"> &lt; </button>
+                    <button type="button" class="trending-next-button">></button>
+                </div>
+                <div class="trending-product-info">
+                    <ul class="trending-list">
+                        <li class="trending-item">
+                            <article class="trending-card">
+                                <a href="#" class="trending-link">
+                                    <img src="../img/" alt="Biztar" class="trending-card-img">
+                                    <h3 class="trending-card-title">Biztar</h3>
+                                    <p class="trending-card-price">$12.00</p>
+                                    <p class="trending-card-text">Business Consultant</p>
+                                    <p class="trending-card-text">UI Kits</p>        
+                                </a>
+                            </article>                
+                        </li>
+                        <li class="trending-item">
+                            <article class="trending-card">
+                                <img src="../img/" alt="Auxell" class="trending-card-img">
+                                <h3 class="trending-card-title">Auxell</h3>
+                                <p class="trending-card-price">$8.00</p>
+                                <p class="trending-card-text">Company Proposal</p>
+                                <p class="trending-card-text">Print Template</p>
+                            </article>          
+                        </li>
+                        <li class="trending-item">
+                            <article class="trending-card">
+                                <img src="../img/" alt="Phitaya" class="trending-card-img">
+                                <h3 class="trending-card-title">Phitaya</h3>
+                                <p class="trending-card-price">$10.00</p>
+                                <p class="trending-card-text">Handwritten Font</p>
+                                <p class="trending-card-text">Fonts</p>
+                            </article>   
+                        </li>
+                        <li class="trending-item">
+                            <article class="trending-card">
+                                <img src="../img/" alt="Rachelle" class="trending-card-img">
+                                <h3 class="trending-card-title">Rachelle</h3>
+                                <p class="trending-card-price">$16.00</p>
+                                <p class="trending-card-text">Media Kit</p>
+                                <p class="trending-card-text">Presentation</p>
+                            </article>   
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+        <section class="promo-section">
+            <div class="container">
+                <div class="promo-designs">
+                    <div class="promo-describe">
+                        <p class="promo-subtitle">New Week, New Designs</p>
+                        <p class="promo-text">
+                            Enjoy a special 15% discount on all our Design Assets for our weekly collection, available right away within this month promotion.
+                        </p>
+                        <button type="button" class="promo-shop-button">Shop Now</button>
+                    </div>
+                    <div class="promo-designs-images">
+                        <ul class="promo-design-images-list">
+                            <li class="promo-design-img-item">
+                                <img src="../img/" alt="img_one">
+                            </li>
+                            <li class="promo-design-images-item">
+                                <img src="../img/" alt="img_two">
+                            </li>
+                            <li class="promo-design-images-item">
+                                <img src="../img/" alt="img_three">
+                            </li>
+                            <li class="promo-design-images-item">
+                                <img src="../img/" alt="img_four">
+                            </li>
+                            <li class="promo-design-images-item">
+                                <img src="../img/" alt="img_five">
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="promo-invitation">
+                    <p class="promo-invitation-text">Refer A Friend, Earn A Reward!</p>
+                    <button type="button" class="promo-invitation-button">Get Your Code</button>
+                </div>
+            </div>
+        </section>
+        <section class="release-section">
+            <div class="container">
+                <h2 class="release-title">NEW RELEASE</h2>
+                <div>
+                    <p class="release-subtitle">Latest Products</p>
+                    <a href="#" class="release-text">
+                        Explore Latest Work
+                    </a>
+                </div>
+                <div class="latest-products">
+                    <ul class="latest-products-list">
+                        <li class="latest-products-item">
+                            <article class="latest-product-card">
+                                <a href="#" class="latest-product-link">
+                                    <img src="../img/" alt="cerea" class="latest-product-img">
+                                    <h3 class="latest-products-title">Cerea</h3>
+                                    <p class="latest-products-text">English Class Presentation</p>
+                                    <p class="latest-products-price">$6.00</p>
+                                    <p class="latest-product-label">
+                                        <img src="../img/" alt="icon_cart">
+                                    </p>
+                                </a>
+                            </article>
+                        </li>
+                        <li class="latest-products-item">
+                            <article class="latest-product-card">
+                                <a href="#" class="latest-product-link">
+                                    <img src="../img/" alt="la-petite" class="latest-product-img">
+                                    <h3 class="latest-products-title">La Petite</h3>
+                                    <p class="latest-products-text">Handwritten Font</p>
+                                    <p class="latest-products-price">$10.00</p>
+                                    <p class="latest-product-label">
+                                        <img src="../img/" alt="icon_cart">
+                                    </p>
+                                </a>
+                            </article>
+                        </li>
+                        <li class="latest-products-item">
+                            <article class="latest-product-card">
+                                <a href="#" class="latest-product-link"></a>
+                                <img src="../img/" alt="gaya" class="latest-product-img">
+                                <h3 class="latest-products-title">Gaya</h3>
+                                <p class="latest-products-text">Fashion Store Mobile App</p>
+                                <p class="latest-products-price">$20.00</p>
+                                <p class="latest-product-label">
+                                    <img src="../img/" alt="icon_cart">
+                                </p>
+                            </article>
+                        </li>
+                        <li class="latest-products-item">
+                            <article class="latest-product-card">
+                                <a href="#" class="latest-product-link">
+                                    <img src="../img/" alt="retro-computer" class="latest-product-img">
+                                    <h3 class="latest-products-title">Retro Computer</h3>
+                                    <p class="latest-products-text">Planner Social Media Feeds</p>
+                                    <p class="latest-products-price">$8.00</p>
+                                    <p class="latest-product-label">
+                                        <img src="../img/" alt="icon_cart">
+                                    </p>
+                                </a>
+                            </article>
+                        </li>
+                        <li class="latest-products-item">
+                            <article class="latest-product-card">
+                                <a href="#" class="latest-product-link">
+                                    <img src="../img/" alt="artverse" class="latest-product-img">
+                                    <h3 class="latest-products-title">ArtVerse</h3>
+                                    <p class="latest-products-text">AI Tools Website Design</p>
+                                    <p class="latest-products-price">$12.00</p>
+                                    <p class="latest-product-label">
+                                        <img src="../img/" alt="icon_cart">
+                                    </p>
+                                </a>
+                            </article>
+                        </li>
+                        <li class="latest-products-item">
+                            <article class="latest-product-card">
+                                <a href="#" class="latest-product-link">
+                                    <img src="../img/" alt="hazzel" class="latest-product-img">
+                                    <h3 class="latest-products-title">Hazzel</h3>
+                                    <p class="latest-products-text">Business School Presentation</p>
+                                    <p class="latest-products-price">$6.00</p>
+                                    <p class="latest-product-label">
+                                        <img src="../img/" alt="icon_cart">
+                                    </p>
+                                </a>
+                            </article>
+                        </li>                
+                    </ul>
+                </div>
+            </div>
+        </section>
+        <section class="staff-picks-section">
+            <div class="container">
+                <h2 class="staff-picks-title">STAFF PICKS</h2>
+                <p class="staff-picks-subtitle">Best Design Works Curated by Our Experts</p>
+                <div class="staff-picks-best-works">
+                    <ol class="staff-picks-list">
+                        <li class="staff-picks-item">
+                            <img src="../img/" alt="img_gignation" class="staff-picks-img">
+                            <p>GigNation</p>
+                            <div>
+                                <p>Freelancer & Project Marketplace</p>
+                                <p>Website Design</p>
+                                <button type="button">
+                                    <img src="../img/" alt="icon_cart">
+                                </button>
+                            </div>
+                        </li>
+                        <li class="staff-picks-item">
+                            <img src="../img/" alt="img_elegant" class="staff-picks-img">
+                            <p>Elegant</p>
+                            <div>
+                                <p>Business Feeds </p>
+                                <p>Social Media</p>
+                                <button type="button">
+                                    <img src="../img/" alt="icon_cart">
+                                </button>
+                            </div>
+                        </li>
+                        <li class="staff-picks-item">
+                            <img src="../img/" alt="img_syrios" class="staff-picks-img">
+                            <p>Syrios</p>
+                            <div>
+                                <p>Business Plan</p>
+                                <p>Presentation</p>
+                                <button type="button">
+                                    <img src="../img/" alt="icon_cart">
+                                </button>
+                            </div>
+                        </li>
+                    </ol>
+                </div>
+            </div>
+        </section>
+        <section class="creators-section" id="creator">
+            <div class="container">
+                <h2 class="creators-title">CREATORS</h2>
+                <div class="creators-heading">
+                    <p class="creators-subtitle">Top Creators</p>
+                    <a href="#" class="creators-explore-link">Explore All Creators</a>
+                </div>
+                <ul class="creators-list">
+                    <li class="creators-item">
+                        <article class="creators-card">
+                            <img src="../img/" alt="visual-vibe-arts" class="creators-img">
+                            <h3 class="creators-card-title">Visual Vibe Arts</h3>
+                            <p class="creators-card-text">120+ Works</p>
+                            <a class="creators-card-link btn">See Works</a>
+                        </article> 
+                    </li>
+                    <li>
+                        <article class="creators-card">
+                            <img src="../img/" alt="code-wizards" class="creators-img">
+                            <h3 class="creators-card-title">Code Wizards</h3>
+                            <p class="creators-card-text">80+ Works</p>
+                            <a class="creators-card-link btn">See Works</a>
+                        </article> 
+                    </li>
+                    <li>
+                        <article class="creators-card">
+                            <img src="../img/" alt="pixel-perfect" class="creators-img">
+                            <h3 class="creators-card-title">Pixel Perfect</h3>
+                            <p class="creators-card-text">200+ Works</p>
+                            <a class="creators-card-link btn">See Works</a>
+                        </article> 
+                    </li>
+                    <li>
+                        <article class="creators-card">
+                            <img src="../img/" alt="animate-canvas" class="creators-img">
+                            <h3 class="creators-card-title">Animate Canvas</h3>
+                            <p class="creators-card-text">60+ Works</p>
+                            <a class="creators-card-link btn">See Works</a>
+                        </article> 
+                    </li>
+                    <li>
+                        <article class="creators-card">
+                            <img src="../img/" alt="modernist-logos" class="creators-img">
+                            <h3 class="creators-card-title">Modernist Logos</h3>
+                            <p class="creators-card-text">150+ Works</p>
+                            <a class="creators-card-link btn">See Works</a>
+                        </article> 
+                    </li>
+                </ul>
+            </div>
+        </section>
+        <section class="faq-section">
+            <div class="container">
+                <div class="faq-info">
+                    <h2 class="faq-title">F.A.Q</h2>
+                    <p class="faq-subtitle">Answers to Your Questions</p>
+                    <button type="button">Ask Us A Question</button>
+                </div>
+                <div class="faq-popular">
+                    <details class="faq-list">
+                        <summary class="faq-item">
+                            Can I request a refund?
+                        </summary>
+                    </details>
+                    <details class="faq-list">
+                        <summary class="faq-item">
+                            How do I access my purchased products?
+                        </summary>
+                        <p class="faq-item-text">Accessing your purchased products is seamless and hassle-free on our digital design marketplace. Simply log in to your account, navigate to the 'My Purchases' section.</p>
+                    </details>
+                    <details class="faq-list">
+                        <summary class="faq-item">
+                            Are there any discounts for bulk purchases?
+                        </summary>
+                    </details>
+                    <details class="faq-list">
+                        <summary class="faq-item">
+                            What payment methods do you accept here?
+                        </summary>
+                    </details>
+                    <details class="faq-list">
+                        <summary class="faq-item">
+                            Can I sell my digital products on this marketplace?
+                        </summary>
+                    </details>
+                </div>
+            </div>
+        </section>
+        <section class="blog-section" id="blog-articles">
+            <div class="container">
+                <h2 class="blog-title">BLOG</h2>
+                <p class="blog-subtitle">Latest Expert Design Tips & Insights</p>
+                <div class="blog-tips">
+                    <ul class="blog-tips-list">
+                        <li class="blog-tips-item">
+                            <article class="blog-card">
+                                <div class="blog-tips-item-img">
+                                    <img src="../img/" alt="img_typography" class="blog-card-img">
+                                    <p class="blog-card-label">TYPOGRAPHY</p>
+                                </div>
+                                <div class="blog-tips-item-descr">
+                                    <h3 class="blog-card-title">Mastering the Art of Typography: Tips for Eye-Catching Designs</h3>
+                                    <p class="blog-card-date">5 APRIL 2024</p>
+                                </div>
+                            </article>
+                        </li>
+                        <li class="blog-tips-item">
+                            <article class="blog-card">
+                                <div class="blog-tips-item-img">
+                                    <img src="../img/" alt="img_ui-ux-design" class="blog-card-img">
+                                    <p class="blog-card-label">UI/UX DESIGN</p>
+                                </div>
+                                <div class="blog-tips-item-descr">
+                                    <h3 class="blog-card-title">The Ultimate Guide to UI/UX: Enhancing App User Experience</h3>
+                                    <p class="blog-card-date">16 MARCH 2024</p>
+                                </div>
+                            </article>
+                        </li>
+                        <li class="blog-tips-item">
+                            <article class="blog-card">
+                                <div class="blog-tips-item-img">
+                                    <img src="../img/" alt="img_typography" class="blog-card-img">
+                                    <p class="blog-card-label">TYPOGRAPHY</p>
+                                </div>
+                                <div class="blog-tips-item-descr">
+                                    <h3 class="blog-card-title">2024 Graphic Design Trends: What Would Be the Future of Design?</h3>
+                                    <p class="blog-card-date">27 FEBRUARY 2024</p>
+                                </div>
+                            </article>
+                        </li>
+                    </ul>
+                    
+                </div>
+                <div class="blog-pagination">
+                    <button class="blog-tips-prev-button" type="button">
+                        <img src="./src/img/" alt="<" />
+                    </button>
+                    <ul class="blog-pagination-list">
+                        <li class="blog-pagination-item">
+                            <button class="blog-pagination-button">.</button>
+                        </li>
+                        <li class="blog-pagination-item">
+                            <button class="blog-pagination-button">.</button>
+                        </li>
+                        <li class="blog-pagination-item">
+                            <button class="blog-pagination-button">.</button>
+                        </li>
+                    </ul>
+                    <button class="blog-tips-next-button" type="button">
+                        <img src="./src/img/" alt=">" />
+                    </button>              
+                </div>
+            </div>
+        </section>
+        <section class="cta-section">
+            <div class="container">
+                <div class="cta-info">
+                    <p class="cta-subtitle">Bring Your Creativity Alive</p>
+                    <p class="cta-text">Explore our new exclusive digital design assets and graphic collections today!</p>
+                    <button type="button" class="cta-button">Shop Now</button>
+                </div>
+                <div class="cta-images">
+                    <img src="../img/" alt="img" class="cta-img">
+                    <img src="../img/" alt="icon_TTT">
+                </div>
+            </div>
+        </section>
         
     </main>
-    <footer>
-        <load src="./src/partials/footer.html" />
+    <footer class="footer-section">
+        <div class="container">
+            <div class="footer-head">
+                <a href="#" class="footer-logo">
+                    <img src="../img/" alt="pixmart" class="footer-logo-img">
+                </a>
+                <p class="footer-text">Your premium digital assets solution with high quality and comprehensive range of products and services.</p>
+                <div class="footer-nav">
+                    <h3 class="footer-subtitle">Company</h3>
+                    <nav>
+                        <ul class="footer-nav-list">
+                            <li class="footer-nav-item">
+                                <a href="#homepage">Homepage v3</a>
+                            </li>
+                            <li class="footer-nav-item">
+                                <a href="#about-us">About Us</a>
+                            </li>
+                            <li class="footer-nav-item">
+                                <a href="#creator">Creators</a>
+                            </li>
+                            <li class="footer-nav-item">
+                                <a href="#blog-articles">Blog Articles</a>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+                <div class="footer-company-info">
+                    <h3 class="footer-subtitle">Products</h3>
+                    <ul class="footer-company-inflist">
+                        <li class="footer-company-info-item">
+                            <a href="#">Website</a>
+                        </li>
+                        <li class="footer-company-info-item">
+                            <a href="#">Mobile App</a>
+                        </li>
+                        <li class="footer-company-info-item"> 
+                            <a href="#">Social Media Feeds</a>
+                        </li>
+                        <li class="footer-company-info-item">
+                            <a href="#">Presentation</a>
+                        </li>
+                        <li class="footer-company-info-item">
+                            <a href="#">Product Mockups</a>
+                        </li>
+                        <li class="footer-company-info-item">
+                            <a href="#">Illustrations</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="footer-products">
+                    <h3 class="footer-subtitle">Account</h3>
+                    <ul class="footer-products-list">
+                        <li class="footer-products-item">
+                            <a href="#">Your Cart</a>
+                        </li>
+                        <li class="footer-products-item">
+                            <a href="#">Check Out</a>
+                        </li>
+                        <li class="footer-products-item">
+                            <a href="#">Refund Policy</a>
+                        </li>
+                        <li class="footer-products-item">
+                            <a href="#">Company Policy</a>
+                        </li>
+                        <li class="footer-products-item">
+                            <a href="#">Send A Message</a>
+                        </li>
+                        <li class="footer-products-item">
+                            <a href="#">Customer Support</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-subscribe-part">
+                <div class="footer-subscribe">
+                    <p>Subscribe to Newsletter</p>
+                    <input type="text">
+                    <button class="footer-subscribe-btn" type="button">Subscribe</button>
+                </div>
+                <div class="footer-follow-us">
+                    <h3 class="footer-subtitle">Follow Us</h3>
+                    <ul class="footer-follow-us-list">
+                        <li class="footer-follow-us-item">
+                            <a href="#">
+                                <img src="../img/" alt="tw">
+                            </a>
+                        </li>
+                        <li class="footer-follow-us-item">
+                            <a href="#">
+                                <img src="../img/" alt="ig">
+                            </a>
+                        </li>
+                        <li class="footer-follow-us-item">
+                            <a href="#">
+                                <img src="../img/" alt="fb">
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <hr>
+            <div class="footer-bottom">
+                <ul class="footer-bottom-list">
+                    <li class="footer-bottom-item">
+                        <a href="#">Privacy Policy</a>
+                    </li>
+                    <li class="footer-bottom-item">
+                        <a href="#">Terms and Condition</a>
+                    </li>
+                    <li class="footer-bottom-item">
+                        <a href="#">Site Map</a>
+                    </li>
+                </ul>
+                <p class="footer-copyright">Copyright © 2024 Pixmart. All rights reserved.</p>
+            </div>
+        </div>
     </footer>
 </body>
 </html>
