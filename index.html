@@ -13,69 +13,81 @@
 <body>
     <header class="header">
         <div class="header-section container">
-            <a href="./index.html" class="logo">
-                Pixmart.
-            </a>
-            <nav class="header-navigation">
-                <ul class="list">
-                    <li class="item">
-                        <a href="#">About</a>
-                    </li>
-                    <li class="item">
-                        <a href="./catalog.html">
-                            Products
-                        </a>
-                    </li>
-                    <li class="item">
-                        <a href="#">
-                            Creators
-                            <sup class="item-superscript">new</sup>
-                        </a>
-                    </li>
-                    <li class="item">
-                        <a href="#">Blog</a>
-                    </li>
-                    <li class="item">
-                        <a href="#">Contact</a>
-                    </li>
-                </ul>
+            <div class="navigation-wrapper">
+                <a href="./index.html" class="logo">
+                    Pixmart.
+                </a>
+                <nav class="header-navigation">
+                    <ul class="list">
+                        <li class="item">
+                            <a href="#" class="link">About</a>
+                        </li>
+                        <li class="item">
+                            <a href="./catalog.html" class="link products">
+                                Products
+                            </a>
+                        </li>
+                        <li class="item">
+                            <a href="#" class="link">
+                                Creators
+                                <sup class="item-superscript">new</sup>
+                            </a>
+                        </li>
+                        <li class="item">
+                            <a href="#" class="link">Blog</a>
+                        </li>
+                        <li class="item">
+                            <a href="#" class="link">Contact</a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+            <div class="actions-wrapper">
                 <ul class="actions-list">
-                    <li class="header-actions-login">
-                        <button class="header-actions-button" type="button">
-                            <img src="../img/" alt="login_icon">
-                        </button>
+                    <li class="login">
+                        <button class="action-button user-btn" type="button">
+                            <svg class="user" width="24" height="24">
+                                <use href="./img/icons/sprite.svg#icon-user"></use>
+                            </svg>
                     </li>
-                    <li class="actions-cart">
-                        <button class="header-actions-button" type="button">
-                            <img src="../img/" alt="cart_icon">
+                    <li class="cart">
+                        <button class="action-button cart-btn" type="button">
+                            <svg class="cart" width="24" height="24">
+                                <use href="./img/icons/sprite.svg#icon-cart"></use>
+                            </svg>
                         </button>
                     </li>
                 </ul>
-            </nav>
+            </div>
+
+            
         </div>
     </header>
     <main class="page-content">
         <section class="hero-section">
-            <div class="container">
+            <div class="hero container">
                 <div class="hero-describe-part">
-                    <h1 class="hero-title">Ignite Your Creativity
-                        with <span class="accent">Premium</span> Designs
+                    <h1 class="hero-title">Ignite Your Creativity with <span class="accent">Premium</span> Designs
                     </h1>
                     <p class="hero-text">
                         Discover, explore, and purchase the finest digital design assets that is tailored for your needs, all within our platform.
                     </p>
-                    <div class="search-bar">
-                        <input class="search-bar-input" type="text">
-                        <button class="search-bar-btn" type="button">Search Now</button>
-                    </div>
+                    <form class="search-form" action="#" method="get">
+                        <input class="search-input" 
+                            type="text" 
+                            autocomplete="off"
+                            name="search"
+                            placeholder="Find fonts, design templates, and more…">
+                        <button class="search-btn" type="submit">Search Now</button>
+                    </form>
                 </div>
                 <figure class="hero-images-part">
                     <img src="../img/" alt="big_img">
                     <img src="../img/" alt="medium_img">
                     <img src="../img/" alt="small_img">
                     <div class="hero-sum-info">
-                        <p class="hero-sum-info-num">10,000+</p>
-                        <p class="hero-sum-info-text">Digital Design Assets</p>
+                        <p class="num">10,000+</p>
+                        <p class="text">Digital Design Assets</p>
                     </div>
                 </figure>
             </div>
@@ -834,29 +846,42 @@
             </div>
             <div class="footer-subscribe-part">
                 <div class="footer-subscribe">
-                    <h3 class="subtitle">Subscribe to Newsletter</h3>
-                    <input type="text">
-                    <button class="footer-subscribe-btn" type="button">Subscribe</button>
+                    <form class="subscribe-form" action="#" method="get">
+                        <label for="email" class="subtitle">Subscribe to Newsletter</label>
+                        <span class="subscribe-wrapper">
+                            <input class="subscribe-input"
+                            type="email"
+                            id="email" 
+                            placeholder="Enter your email address ..."
+                            required
+                            pattern="[a-z0-9._%+\-]+@[a-z0-9.\-]+\.[a-z]{2,}$"
+                            inputmode="email">
+                        <button class="footer-subscribe-btn" type="submit">Subscribe</button>
+                        </span>
+                    </form>
                 </div>
                 <div class="footer-follow-us">
                     <h3 class="subtitle">Follow Us</h3>
                     <ul class="footer-follow-list">
                         <li class="footer-follow-item">
                             <a href="https://x.com/?lang=uk" class="footer-follow-link">
-                                <img class="image"
-                                    src="./img/social-media/tw.webp" 
-                                    alt="Twitter logo"
-                                    width="32" height="32">
+                                <svg class="icon-twitter" width="32" height="32">
+                                    <use href="./img/icons/sprite.svg#icon-twitter-m"></use>
+                                </svg>
                             </a>
                         </li>
                         <li class="footer-follow-item">
-                            <a href="https://www.instagram.com/">
-                                <img src="../img/" alt="ig">
+                            <a href="https://www.instagram.com/" class="footer-follow-link">
+                                <svg class="icon-instagram" width="32" height="32">
+                                    <use href="./img/icons/sprite.svg#icon----"></use>
+                                </svg>
                             </a>
                         </li>
                         <li class="footer-follow-item">
-                            <a href="https://www.facebook.com/">
-                                <img src="../img/" alt="fb">
+                            <a href="https://www.facebook.com/" class="footer-follow-link">
+                                <svg class="icon-facebook" width="32" height="32">
+                                    <use href="./img/icons/sprite.svg#icon----"></use>
+                                </svg>
                             </a>
                         </li>
                     </ul>
@@ -865,13 +890,15 @@
             <div class="footer-bottom">
                 <ul class="footer-bottom-list">
                     <li class="footer-bottom-item">
-                        <a href="#">Privacy Policy</a>
+                        <a href="#" class="footer-bottom-link">Privacy Policy</a>
                     </li>
+                    <li class="vertical-line"></li>
                     <li class="footer-bottom-item">
-                        <a href="#">Terms and Condition</a>
+                        <a href="#" class="footer-bottom-link">Terms and Condition</a>
                     </li>
+                    <li class="vertical-line"></li>
                     <li class="footer-bottom-item">
-                        <a href="#">Site Map</a>
+                        <a href="#" class="footer-bottom-link">Site Map</a>
                     </li>
                 </ul>
                 <p class="footer-copyright">Copyright © 2024 Pixmart. All rights reserved.</p>
