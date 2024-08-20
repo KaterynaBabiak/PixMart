@@ -1,51 +1,68 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/x-icon" href="/img/favicon.webp">
     <title>Pixmart</title>
-  </head>
+    <link rel="stylesheet" href="./css/modern-normalize.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Libre+Franklin:ital,wght@0,100..900;1,100..900&family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="./css/styles.css">
+</head>
   <body>
     <header class="header">
-      <div class="container">
-        <a href="./index.html"> Pixmart. </a>
-        <nav class="header-navigation">
-          <ul class="header-navigation-list">
-            <li class="header-navigation-item">
-              <a href="#">About</a>
-            </li>
-            <li class="header-navigation-item">
-              <a href="./catalog.html">
-                Products
+      <div class="header-section container">
+          <div class="navigation-wrapper">
+              <a href="./index.html" class="logo">
+                  Pixmart.
               </a>
-            </li>
-            <li class="header-navigation-item">
-              <a href="#">
-                Creators
-                <sup class="header-navigation-item-superscript">new</sup>
-              </a>
-            </li>
-            <li class="header-navigation-item">
-              <a href="#">Blog</a>
-            </li>
-            <li class="header-navigation-item">
-              <a href="#">Contact</a>
-            </li>
-          </ul>
-          <ul class="header-actions">
-            <li class="header-actions-login">
-              <input type="text" />
-              <img src="../img/" alt="search_icon" />
-            </li>
-            <li class="header-actions-cart">
-              <button class="header-actions-button" type="button">
-                <img src="../img/" alt="cart_icon" />
-              </button>
-            </li>
-          </ul>
-        </nav>
+              <nav class="header-navigation">
+                  <ul class="list">
+                      <li class="item">
+                          <a href="./about.html" class="link">About</a>
+                      </li>
+                      <li class="item">
+                          <a href="./catalog.html" class="link products active">
+                              Products
+                          </a>
+                      </li>
+                      <li class="item">
+                          <a href="./creators.html" class="link">
+                              Creators
+                              <sup class="item-superscript">new</sup>
+                          </a>
+                      </li>
+                      <li class="item">
+                          <a href="./blog.html" class="link">Blog</a>
+                      </li>
+                      <li class="item">
+                          <a href="./contact.html" class="link">Contact</a>
+                      </li>
+                  </ul>
+              </nav>
+          </div>
+          <div class="actions-wrapper">
+              <ul class="actions-list">
+                  <li class="login">
+                      <button class="action-button user-btn" type="button">
+                          <svg class="user" width="24" height="24">
+                              <use href="./img/icons/sprite.svg#icon-user"></use>
+                          </svg>
+                      </button>
+                  </li>
+                  <li class="cart">
+                      <button class="action-button cart-btn" type="button">
+                          <svg class="cart" width="24" height="24">
+                              <use href="./img/icons/sprite.svg#icon-cart"></use>
+                          </svg>
+                      </button>
+                  </li>
+              </ul>
+          </div>  
       </div>
-    </header>
+  </header>
     <main class="page-content">
       <section class="catalog-hero-section" id="catalog">
         <h1 class="catalog-hero-heading">

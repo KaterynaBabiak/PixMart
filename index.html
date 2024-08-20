@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/x-icon" href="/img/favicon.webp">
     <title>Pixmart</title>
     <link rel="stylesheet" href="./css/modern-normalize.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -37,7 +38,7 @@
                             <a href="#" class="link">Blog</a>
                         </li>
                         <li class="item">
-                            <a href="#" class="link">Contact</a>
+                            <a href="./contact.html" class="link">Contact</a>
                         </li>
                     </ul>
                 </nav>
@@ -49,6 +50,7 @@
                             <svg class="user" width="24" height="24">
                                 <use href="./img/icons/sprite.svg#icon-user"></use>
                             </svg>
+                        </button>
                     </li>
                     <li class="cart">
                         <button class="action-button cart-btn" type="button">
@@ -78,17 +80,30 @@
                             autocomplete="off"
                             name="search"
                             placeholder="Find fonts, design templates, and more…">
-                        <button class="search-btn" type="submit">Search Now</button>
+                        <button class="search-btn button" type="submit">Search Now</button>
                     </form>
                 </div>
                 <figure class="hero-images-part">
-                    <img src="../img/" alt="big_img">
-                    <img src="../img/" alt="medium_img">
-                    <img src="../img/" alt="small_img">
-                    <div class="hero-sum-info">
-                        <p class="num">10,000+</p>
-                        <p class="text">Digital Design Assets</p>
-                    </div>
+                    <img class="big-img"
+                        src="./img/hero/big-image.webp" 
+                        alt="Three options for mobile design templates"
+                        width="518" height="314">
+                        <div class="wrapper">
+                            <img class="Collection of pre-designed templates for LinkedIn posts"
+                            src="./img/hero/medium-image.webp" 
+                            alt="medium-img"
+                            width="316" height="238">
+                            <div class="wrapper-two">
+                                <img class="small-img"
+                                src="./img/hero/small-image.webp" 
+                                alt="Template of contact page"
+                                width="193" height="128">
+                                <div class="hero-sum-info">
+                                    <p class="num subtitle">10,000+</p>
+                                    <p class="text">Digital Design Assets</p>
+                                </div>
+                            </div>
+                        </div>
                 </figure>
             </div>
         </section>
@@ -103,7 +118,7 @@
                         <article class="categories-card">
                             <a href="#" class="categories-link">
                                 <img class="image"
-                                    src="./img/ui-design.webp" 
+                                    src="./img/categories/ui-design.webp" 
                                     alt="img_UI Kits Design" class="categories-img"
                                     width="201" height="237">
                                 <div class="wrapper">
@@ -117,7 +132,7 @@
                         <article class="categories-card">
                             <a href="#" class="categories-link">
                                 <img class="img"
-                                    src="./img/2.webp" 
+                                    src="./img/categories/social-media.webp" 
                                     alt="img_Social Media" 
                                     width="201" height="237">
                                 <div class="wrapper">
@@ -131,7 +146,7 @@
                         <article class="categories-card">
                             <a href="#" class="categories-link">
                                 <img class="img"
-                                    src="../img/" 
+                                    src="./img/categories/font-design.webp" 
                                     alt="img_Font Design"
                                     width="201" height="237">
                                     <div class="wrapper">
@@ -145,7 +160,7 @@
                         <article class="categories-card">
                             <a href="#" class="categories-link">
                                 <img class="img"
-                                    src="../img/" 
+                                    src="./img/categories/ppt-slides.webp" 
                                     alt="img_PPT Slides"
                                     width="201" height="237">
                                     <div class="wrapper">
@@ -159,7 +174,7 @@
                         <article class="categories-card">
                             <a href="#" class="categories-link">
                                 <img class="img"
-                                    src="../img/" 
+                                    src="./img/categories/illust-design.webp" 
                                     alt="img_Illust Design"
                                     width="201" height="237">   
                                 <div class="wrapper">
@@ -173,7 +188,7 @@
                         <article class="categories-card">
                             <a href="#" class="categories-link">
                                 <img class="img"
-                                    src="../img/" 
+                                    src="./img/categories/print-template.webp" 
                                     alt="img_Print Template"
                                     width="201" height="237">
                                 <div class="wrapper">
@@ -192,12 +207,12 @@
                 <div class="trending-wrapper">
                     <p class="subtitle trending">Popular Products</p>
                     <div class="trending-scrollbar">
-                        <button type="button" class="scrollbar-button">
+                        <button type="button" class="scrollbar-btn">
                             <svg class="icon-arrow" width="32" height="32">
                                 <use href="./img/icons/sprite.svg#icon-arrow-left"></use>
                             </svg>
                         </button>
-                        <button type="button" class="scrollbar-button">
+                        <button type="button" class="scrollbar-btn">
                             <svg class="icon-arrow" width="32" height="32">
                                 <use href="./img/icons/sprite.svg#icon-arrow-right"></use>
                             </svg>
@@ -311,8 +326,8 @@
                 <h2 hidden>Promo</h2>
 
                 <aside class="promo-invitation">
-                    <p class="promo-text">Refer A Friend, Earn A Reward!</p>
-                    <button type="button" class="promo-button">Get Your Code</button>
+                    <p class="promo-text subtitle">Refer A Friend, Earn A Reward!</p>
+                    <button type="button" class="promo-btn button">Get Your Code</button>
                 </aside>
 
                 <div class="promo-designs">
@@ -324,26 +339,6 @@
                             </p>
                             <a href="./catalog.html" class="shopping-link button">Shop Now</a>
                         </div>
-                        <div class="promo-designs-images">
-                            <ul class="promo-design-images-list">
-                                <li class="promo-design-img-item">
-                                    <img src="../img/" alt="img_one">
-                                </li>
-                                <li class="promo-design-images-item">
-                                    <img src="../img/" alt="img_two">
-                                </li>
-                                <li class="promo-design-images-item">
-                                    <img src="../img/" alt="img_three">
-                                </li>
-                                <li class="promo-design-images-item">
-                                    <img src="../img/" alt="img_four">
-                                </li>
-                                <li class="promo-design-images-item">
-                                    <img src="../img/" alt="img_five">
-                                </li>
-                            </ul>
-                        </div>
-                        
                     </div>
                 </div>
                 
@@ -587,9 +582,9 @@
                             src="./img/top-creators/text.webp" 
                             alt="Text creator avatar" 
                             width="80" height="80">
-                        <h3 class="card-title">Text</h3>
+                        <h3 class="card-heading">Text</h3>
                         <p class="card-text">120+ Works</p>
-                        <button type="button" class="card-button">Text</button>
+                        <button type="button" class="card-btn button">Text</button>
                         </article> 
                     </li>
                     <li class="creators-item">
@@ -598,9 +593,9 @@
                             src="./img/top-creators/code-wizards.webp" 
                             alt="Code wizards creator avatar" 
                             width="80" height="80">
-                            <h3 class="card-title">Code Wizards</h3>
+                            <h3 class="card-heading">Code Wizards</h3>
                             <p class="card-text">80+ Works</p>
-                            <button type="button" class="card-button">Text</button>
+                            <button type="button" class="card-btn button">Text</button>
                         </article> 
                     </li>
                     <li class="creators-item">
@@ -609,9 +604,9 @@
                             src="./img/top-creators/pixel-perfect.webp" 
                             alt="Pixel perfect creator avatar" 
                             width="80" height="80">
-                            <h3 class="card-title">Pixel Perfect</h3>
+                            <h3 class="card-heading">Pixel Perfect</h3>
                             <p class="card-text">200+ Works</p>
-                            <button type="button" class="card-button">Text</button>
+                            <button type="button" class="card-btn button">Text</button>
                         </article> 
                     </li>
                     <li class="creators-item">
@@ -620,9 +615,9 @@
                             src="./img/top-creators/animate-canvas.webp" 
                             alt="Animate canvas creator avatar" 
                             width="80" height="80">
-                            <h3 class="card-title">Animate Canvas</h3>
+                            <h3 class="card-heading">Animate Canvas</h3>
                             <p class="card-text">60+ Works</p>
-                            <button type="button" class="card-button">Text</button>
+                            <button type="button" class="card-btn button">Text</button>
                         </article> 
                     </li>
                     <li class="creators-item">
@@ -631,9 +626,9 @@
                             src="./img/top-creators/modernist-logos.webp" 
                             alt="Modernist logos creator avatar" 
                             width="80" height="80">
-                            <h3 class="card-title">Modernist Logos</h3>
+                            <h3 class="card-heading">Modernist Logos</h3>
                             <p class="card-text">150+ Works</p>
-                            <button type="button" class="card-button">Text</button>
+                            <button type="button" class="card-btn button">Text</button>
                         </article> 
                     </li>
                 </ul>
@@ -731,41 +726,50 @@
                     
                 </div>
                 <div class="blog-pagination">
-                    <button class="scrollbar-button" type="button">
+                    <button class="scrollbar-btn" type="button">
                         <svg class="icon-arrow" width="24" height="24">
                             <use href="./img/icons/sprite.svg#icon-arrow-left-m"></use>
                         </svg>
                     </button>
                     <ul class="blog-pagination-list">
                         <li class="blog-pagination-item">
-                            <button class="blog-pagination-button"></button>
+                            <button class="blog-pagination-btn"></button>
                         </li>
                         <li class="blog-pagination-item">
-                            <button class="blog-pagination-button"></button>
+                            <button class="blog-pagination-btn"></button>
                         </li>
                         <li class="blog-pagination-item">
-                            <button class="blog-pagination-button"></button>
+                            <button class="blog-pagination-btn"></button>
                         </li>
                     </ul>
-                    <button class="scrollbar-button" type="button">
+                    <button class="scrollbar-btn" type="button">
                         <svg class="icon-arrow" width="24" height="24">
                             <use href="./img/icons/sprite.svg#icon-arrow-right-m"></use>
                         </svg>
                     </button>              
                 </div>
             </div>
-        </section>       
-    </main>
-    <footer class="footer-section">
-        <div class="container">
-            <h2 hidden>Footer navigation</h2>
-            <div class="cta-section">
+        </section>  
+        <section class="cta-section">
+            <div class="cta-wrapper icon-ttt container">
                 <div class="cta-info">
                     <p class="subtitle cta">Bring Your Creativity Alive</p>
                     <p class="cta-text">Explore our new exclusive digital design assets and graphic collections today!</p>
                     <a href="./catalog.html" class="shopping-link button">Shop Now</a>
                 </div>
+                <div class="cta-picture">
+                    <img class="cta image"
+                    src="./img/cta/cta-image.webp" 
+                    alt="Website design for an AshGray company"
+                    width="274" height="151">
+                </div>
             </div>
+        </section>     
+    </main>
+    <footer class="footer-section">
+        <div class="container">
+            <h2 hidden>Footer navigation</h2>
+
             <div class="footer-head">
                 <div class="footer-logo-wrapper">
                     <a href="#" class="logo-link">
@@ -852,11 +856,13 @@
                             <input class="subscribe-input"
                             type="email"
                             id="email" 
+                            name="email"
+                            autocomplete="on"
                             placeholder="Enter your email address ..."
                             required
                             pattern="[a-z0-9._%+\-]+@[a-z0-9.\-]+\.[a-z]{2,}$"
                             inputmode="email">
-                        <button class="footer-subscribe-btn" type="submit">Subscribe</button>
+                        <button class="footer-subscribe-btn button" type="submit">Subscribe</button>
                         </span>
                     </form>
                 </div>
@@ -866,21 +872,21 @@
                         <li class="footer-follow-item">
                             <a href="https://x.com/?lang=uk" class="footer-follow-link">
                                 <svg class="icon-twitter" width="32" height="32">
-                                    <use href="./img/icons/sprite.svg#icon-twitter-m"></use>
+                                    <use href="./img/icons/sprite.svg#icon-twitter"></use>
                                 </svg>
                             </a>
                         </li>
                         <li class="footer-follow-item">
                             <a href="https://www.instagram.com/" class="footer-follow-link">
                                 <svg class="icon-instagram" width="32" height="32">
-                                    <use href="./img/icons/sprite.svg#icon----"></use>
+                                    <use href="./img/icons/sprite.svg#icon-instagram"></use>
                                 </svg>
                             </a>
                         </li>
                         <li class="footer-follow-item">
                             <a href="https://www.facebook.com/" class="footer-follow-link">
                                 <svg class="icon-facebook" width="32" height="32">
-                                    <use href="./img/icons/sprite.svg#icon----"></use>
+                                    <use href="./img/icons/sprite.svg#icon-facebook"></use>
                                 </svg>
                             </a>
                         </li>

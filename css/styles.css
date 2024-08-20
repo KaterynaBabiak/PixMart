@@ -14,11 +14,13 @@
     --gradient-light: ;
     --transparent-black: ;
     --transparent-white: ;
-    /*--jakarta-font: "Plus Jakarta Sans", Arial, sans-serif;
-    --libre-franklin-font: "Libre Franklin", Arial, sans-serif;*/
+    /*--heading-font: "Plus Jakarta Sans", Arial, sans-serif;
+    --text-font: "Libre Franklin", Arial, sans-serif;*/
 }
 
-* {
+*,
+*::before,
+*::after {
     box-sizing: border-box;
 }
 
@@ -26,7 +28,7 @@ body {
     font-family: "Libre Franklin", Arial, sans-serif;
     font-size: 16px;
     font-weight: 400;
-    line-height: 24px;
+    line-height: 1.5;
     color: var(--black);
     background-color: #1D395F05;
 }
@@ -63,6 +65,13 @@ img {
     display: block;
 }
 
+figure {
+    margin-block-start: 0;
+    margin-block-end: 0;
+    margin-inline-start: 0;
+    margin-inline-end: 0;
+}
+
 .container {
     max-width: 1440px;
     padding: 0 80px;
@@ -78,7 +87,12 @@ img {
     position: absolute;
     white-space: nowrap; 
     width: 1px;
-  }
+}
+
+.button {
+    font-weight: 700;
+    line-height: 1.5;
+}
 
 
 /*------------------HEADER-SECTION------------------*/
@@ -101,7 +115,7 @@ img {
     font-family: "Plus Jakarta Sans", Arial, sans-serif;
     font-size: 20px;
     font-weight: 800;
-    line-height: 28px;
+    line-height: 1.4;
     text-transform: capitalize;
     letter-spacing: -0.02em;
     color: var(--blue);
@@ -123,6 +137,17 @@ img {
     color: var(--black);
 }
 
+.header-navigation .link.active {
+    font-weight: 700;
+    border-bottom: 1px solid #222222;
+}
+
+.header-navigation .link.products.active,
+.header-navigation .link.creators.active {
+    font-weight: 700;
+    border-bottom: transparent;
+}
+
 .header-navigation .link.products {
     display: flex;
     align-items: center;
@@ -141,10 +166,9 @@ img {
 }
 
 .item-superscript {
-    font-family: "Libre Franklin", Arial, sans-serif;
     font-size: 8px;
     font-weight: 700;
-    line-height: 10px;
+    line-height: 1.25;
     text-transform: uppercase;
     color: var(--white);
     background-color: var(--blue);
@@ -171,12 +195,20 @@ img {
     background-color: var(--light-blue);
 }
 
+.action-button:hover.user-btn {
+    background-color: var(--blue);
+}
+
 .action-button.cart-btn {
     background-color: var(--blue);
 }
 
 .action-button .user {
     fill: var(--blue);
+}
+
+.action-button:hover .user {
+    fill: var(--light-blue);
 }
 
 .action-button .cart {
@@ -200,7 +232,7 @@ img {
     font-family: "Plus Jakarta Sans", Arial, sans-serif;
     font-size: 60px;
     font-weight: 700;
-    line-height: 72px;
+    line-height: 1.2;
     text-align: left;
     margin-bottom: 16px;
 }
@@ -211,17 +243,12 @@ img {
 
 .hero-text {
     font-size: 20px;
-    line-height: 30px;
     text-align: left;
     opacity: 75%;
     margin-bottom: 40px;
 }
 
 .search-input {
-    font-family: "Libre Franklin", Arial, sans-serif;
-    font-size: 16px;
-    font-weight: 400;
-    line-height: 24px;
     text-align: left;
     color: #22222280;
     background-color: var(--white);
@@ -229,6 +256,7 @@ img {
     border: none;
     border-radius: 10px;
     width: 400px;
+    height: 64px;
     padding: 20px;
     margin-right: 8px;
 
@@ -236,20 +264,12 @@ img {
 }
 
 .search-input ::placeholder {
-    font-family: "Libre Franklin", Arial, sans-serif;
-    font-size: 16px;
-    font-weight: 400;
-    line-height: 24px;
     text-align: left;
     color: #22222280;
     background-color: var(--white);
 }
 
 .search-btn {
-    font-family: "Libre Franklin", Arial, sans-serif;
-    font-size: 16px;
-    font-weight: 700;
-    line-height: 24px;
     text-align: center;
     text-transform: capitalize;
     color: var(--white);
@@ -259,10 +279,76 @@ img {
     padding: 20px 46px;
 }
 
+.search-btn:hover {
+    background-color: var(--dark-blue);
+}
+
+.hero-images-part {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+
+    width: 556px;
+
+    position: relative;
+}
+
+.hero-images-part .wrapper {
+    display: flex;
+    gap: 20px;
+}
+
+.hero-images-part .wrapper-two {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
 
 
 
+.big-img,
+.medium-img,
+.small-img {
+    border-radius: 20px;
+}
 
+.big-img {
+    margin: 0 0 0 auto;
+}
+
+.hero-images-part::before {
+    content: '';
+    
+    width: 56px;
+    height: 56px;
+    border-radius: 5px;
+    background-color: var(--white);
+    box-shadow: 0px 4px 40px 0px #1D395F14;
+    background-image: url(../img/icons/t.svg);
+    background-repeat: no-repeat;
+    background-position: 50%;
+
+    position: absolute;
+    top: 80px;
+    left: 0;
+}
+
+.hero-images-part::after {
+    content: '';
+
+    width: 56px;
+    height: 56px;
+    border-radius: 5px;
+    background-color: var(--white);
+    box-shadow: 0px 4px 40px 0px #1D395F14;
+    background-image: url(../img/icons/papers.svg);
+    background-repeat: no-repeat;
+    background-position: 50%;
+
+    position: absolute;
+    bottom: 146px;
+    right: 0;
+}
 
 .hero-sum-info {
     background-color: var(--light-blue);
@@ -271,10 +357,8 @@ img {
 }
 
 .hero-sum-info .num {
-    font-family: "Plus Jakarta Sans", Arial, sans-serif;
     font-size: 24px;
-    font-weight: 700;
-    line-height: 32px;
+    line-height: 1.33;
     text-align: left;
     margin-bottom: 6px;
 }
@@ -312,8 +396,15 @@ img {
     font-family: "Plus Jakarta Sans", Arial, sans-serif;
     font-size: 48px;
     font-weight: 700;
-    line-height: 58px;
+    line-height: 1.21;
     text-transform: capitalize;
+}
+
+.card-title {
+    font-family: "Plus Jakarta Sans", Arial, sans-serif;
+    font-size: 28px;
+    font-weight: 700;
+    line-height: 1.43;
 }
 
 .subtitle.categories {
@@ -337,13 +428,17 @@ img {
     border-radius: 20px;
 }
 
-/*.categories-link:hover,
+.categories-link:hover,
 .categories-link:focus {
     background-color: var(--blue);
-}*/
+}
+
+.categories-link:hover .label,
+.categories-link:hover .card-title {
+    color: var(--white);
+}
 
 .categories-link .image {
-    border: 1px solid black;
     border-radius: 20px;
 }
 
@@ -353,17 +448,13 @@ img {
     justify-content: space-between;
 }
 
-.categories-card .wrapper .card-title {
-    font-family: "Plus Jakarta Sans", Arial, sans-serif;
-    font-size: 28px;
-    font-weight: 700;
-    line-height: 40px;
+.categories-card .card-title {
     color: var(--black);
     text-align: left;
     text-transform: capitalize;
 }
 
-.categories-card .wrapper .label {
+.categories-card .label {
     color: var(--blue);
     text-align: right;
 }
@@ -386,7 +477,7 @@ img {
     gap: 12px;
 }
 
-.scrollbar-button {
+.scrollbar-btn {
     background-color: var(--white);
     border: none;
     border-radius: 50%;
@@ -395,8 +486,8 @@ img {
     padding: 12px;
 }
 
-.scrollbar-button:hover,
-.scrollbar-button:focus {
+.scrollbar-btn:hover,
+.scrollbar-btn:focus {
     background-color: var(--light-blue);
 }
 
@@ -418,6 +509,11 @@ img {
 .trending-card .image {
     border-radius: 20px;
     margin-bottom: 16px;
+    border: 2px solid transparent;
+}
+
+.trending-card:hover .image {
+    border: 2px solid var(--blue);
 }
 
 .trending-card-info {
@@ -428,10 +524,6 @@ img {
 }
 
 .trending-card-info .card-title {
-    font-family: "Plus Jakarta Sans", Arial, sans-serif;
-    font-size: 28px;
-    font-weight: 700;
-    line-height: 40px;
     text-align: left;
     color: var(--black);
 }
@@ -495,6 +587,9 @@ img {
     display: flex;
     gap: 40px;
     padding: 40px;
+    background-image: url(../img/promo/promo-background.webp);
+    background-repeat: no-repeat;
+    background-size: contain;
     background-color: var(--light-blue);
     border-radius: 20px;
     max-width: 955px;
@@ -516,7 +611,6 @@ img {
 
 .shopping-link {
     display: flex;
-    font-weight: 700;
     text-align: center;
     color: var(--white);
     background-color: var(--blue);
@@ -524,6 +618,10 @@ img {
     padding: 12px 46px;
     border-radius: 10px;
 
+}
+
+.shopping-link:hover {
+    background-color: var(--dark-blue);
 }
 
 .promo-designs-images {
@@ -539,21 +637,12 @@ img {
 }
 
 .promo-text {
-    font-family: "Plus Jakarta Sans", Arial, sans-serif;
-    font-size: 48px;
-    font-weight: 700;
-    line-height: 58px;
     text-align: left;
     color: var(--white);
     margin-bottom: 44px;
 }
 
-.promo-button {
-    font-family: Libre Franklin;
-    font-size: 16px;
-    font-weight: 700;
-    line-height: 24px;
-
+.promo-btn {
     width: 100%;
     padding: 10px 46px;
     border: none;
@@ -607,7 +696,6 @@ img {
     font-family: "Plus Jakarta Sans", Arial, sans-serif;
     font-size: 20px;
     font-weight: 700;
-    line-height: 30px;
     text-align: left;
     color: var(--black);
     margin-bottom: 2px;
@@ -629,8 +717,11 @@ img {
     font-family: "Plus Jakarta Sans", Arial, sans-serif;
     font-size: 20px;
     font-weight: 700;
-    line-height: 30px;
     color: var(--black);
+}
+
+.products-item:hover .product-price {
+    color: var(--blue);
 }
 
 .product-cart .icon-cart {
@@ -642,7 +733,7 @@ img {
     fill: var(--blue);
 }
 
-.product-cart .icon-cart:hover {
+.products-item:hover .product-cart .icon-cart {
     background-color: var(--blue);   
     fill: var(--white); 
 }
@@ -696,10 +787,6 @@ img {
 }
 
 .staff-picks-card .card-title {
-    font-family: "Plus Jakarta Sans", Arial, sans-serif;
-    font-size: 28px;
-    font-weight: 700;
-    line-height: 40px;
     text-align: left;
     color: var(--black);
     margin-bottom: 8px;
@@ -747,7 +834,7 @@ img {
     font-family: "Plus Jakarta Sans", Arial, sans-serif;
     font-size: 28px;
     font-weight: 700;
-    line-height: 40px;
+    line-height: 1.43;
 
     width: 80px;
     height: 56px;
@@ -799,7 +886,7 @@ img {
     margin-bottom: 16px;
 }
 
-.creators-card .card-title {
+.creators-card .card-heading {
     font-size: 16px;
     font-weight: 700;
     color: var(--black);
@@ -812,11 +899,7 @@ img {
    margin-bottom: 20px;
 }
 
-.creators-card .card-button {
-    font-family: "Libre Franklin", Arial, sans-serif;
-    font-size: 16px;
-    font-weight: 700;
-    line-height: 24px;
+.creators-card .card-btn {
     text-align: center;
     color: var(--blue);
     background-color: var(--light-blue);
@@ -825,6 +908,12 @@ img {
     padding: 10px 79px;
     border: none;
     border-radius: 5px;
+}
+
+.creators-card .card-btn:hover,
+.creators-card .card-btn:focus {
+    color: var(--light-blue);
+    background-color: var(--blue);
 }
 
 /*------------------F.A.Q. SECTION------------------*/
@@ -854,10 +943,6 @@ img {
 }
 
 .ask-us.button {
-    font-family: "Libre Franklin", Arial, sans-serif;
-    font-size: 16px;
-    font-weight: 700;
-    line-height: 24px;
     color: var(--blue);
     background-color: var(--white);
     border: none;
@@ -867,6 +952,11 @@ img {
     padding: 10px 46px;
 
     float: right;   
+}
+
+.ask-us.button:hover {
+    color: var(--light-blue);
+    background-color: var(--blue);
 }
 
 .faq-popular {
@@ -881,7 +971,7 @@ img {
     font-family: "Plus Jakarta Sans", Arial, sans-serif;
     font-size: 20px;
     font-weight: 700;
-    line-height: 30px;
+    line-height: 1.5;
     color: var(--black);
     background-color: var(--white);
     border-radius: 10px;
@@ -899,6 +989,11 @@ img {
     height: 16px;
     background: url(../img/icons/arrow-down-s.svg);
     background-size: cover;
+}
+
+.faq-list[open] {
+    border: 2px solid var(--blue);
+    border-radius: 10px;
 }
 
 .faq-list[open] .faq-item {
@@ -919,7 +1014,7 @@ img {
 /*------------------BLOG SECTION------------------*/
 
 .blog-section {
-    margin-bottom: 332px;
+    margin-bottom: 120px;
 }
 
 .title.blog {
@@ -942,7 +1037,12 @@ img {
     width: 413px;
     height: fit-content;
     padding: 20px;
+    border: 2px solid transparent;
     border-radius: 20px;
+}
+
+.blog-item:hover {
+    border: 2px solid var(--blue);
 }
 
 .blog-picture-wrapper {
@@ -965,10 +1065,8 @@ img {
 }
 
 .blog-link .card-title {
-    font-family: "Plus Jakarta Sans", Arial, sans-serif;
     font-size: 20px;
-    font-weight: 700;
-    line-height: 30px;
+    line-height: 1.5;
     color: var(--black);
     padding-left: 16px;
     margin-bottom: 12px;
@@ -987,7 +1085,7 @@ img {
     gap: 80px;
 }
 
-.blog-pagination .scrollbar-button {
+.blog-pagination .scrollbar-btn {
     background-color: transparent;
 }
 
@@ -996,7 +1094,7 @@ img {
     gap: 24px;
 }
 
-.blog-pagination-button {
+.blog-pagination-btn {
     width: 16px;
     height: 16px;
     background-color: var(--black);
@@ -1005,21 +1103,21 @@ img {
     border-radius: 50%;
 }
 
-.blog-pagination-button:hover,
-.blog-pagination-button:focus,
-.blog-pagination-button:active {
+.blog-pagination-btn:hover,
+.blog-pagination-btn:focus,
+.blog-pagination-btn:active {
     background-color: var(--blue);
     opacity: 100%;
 }
 
 /*------------------CTA SECTION------------------*/
 
-.cta-section {
+/*.cta-section {
     position: absolute;
     top: -212px;
     left: 120px;
     display: flex;
-    flex-direction: column;
+    gap: 44px;
     background-color: var(--light-blue);
     border-radius: 20px;
     background-image: url(/img/cta/cta.webp);
@@ -1028,7 +1126,25 @@ img {
     background-position: right; 
     width: 1280px;
     height: 408px;
-    padding: 64px 56px;
+    padding: 64px 56px 40px 56px;
+}
+
+.cta-section::after {
+    content: '';
+    display: block;
+
+    width: 56px;
+    height: 56px;
+    border-radius: 10px;
+    background-color: var(--white);
+    box-shadow: 0px 4px 40px 0px #1D395F14;
+    background-image: url(../img/icons/ttt.svg);
+    background-repeat: no-repeat;
+    background-position: 50%;
+
+    position: absolute;
+    top: 98px;
+    right: 24px;
 }
 
 .cta-info {
@@ -1041,16 +1157,78 @@ img {
 
 .cta-text {
     font-size: 20px;
-    line-height: 30px;
     text-align: left;
     opacity: 70%;
     margin-bottom: 40px;
 }
 
+.cta-picture {
+    border-radius: 10px;
+    margin: auto 0 0 0;
+}*/
+
+
+.cta-wrapper {
+    position: relative;
+    margin-bottom: -212px;
+    /*left: 120px;*/
+    display: flex;
+    gap: 44px;
+    background-color: var(--light-blue);
+    border-radius: 20px;
+    background-image: url(/img/cta/cta.webp);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: right; 
+    width: 1280px;
+    height: 408px;
+    padding: 64px 56px 40px 56px;
+}
+
+.cta-wrapper::after {
+    content: '';
+    display: block;
+
+    width: 56px;
+    height: 56px;
+    border-radius: 10px;
+    background-color: var(--white);
+    box-shadow: 0px 4px 40px 0px #1D395F14;
+    background-image: url(../img/icons/ttt.svg);
+    background-repeat: no-repeat;
+    background-position: 50%;
+
+    position: absolute;
+    top: 98px;
+    right: 24px;
+}
+
+.cta-info {
+    width: 387px;
+}
+
+.subtitle.cta {
+    margin-bottom: 16px;
+}
+
+.cta-text {
+    font-size: 20px;
+    text-align: left;
+    opacity: 70%;
+    margin-bottom: 40px;
+}
+
+.cta-picture {
+    border-radius: 10px;
+    margin: auto 0 0 0;
+}
+
+
+
 /*------------------FOOTER SECTION------------------*/
 
 .footer-section {
-    position: relative;
+    /*position: relative;*/
     background-color: var(--black);
     padding: 310px 0 24px 0;
 }
@@ -1085,10 +1263,8 @@ img {
 .footer-nav .subtitle,
 .footer-products .subtitle,
 .footer-account .subtitle {
-    font-family: "Plus Jakarta Sans", Arial, sans-serif;
     font-size: 20px;
-    font-weight: 700;
-    line-height: 30px;
+    line-height: 1.5;
     text-align: left;
     color: var(--white);
     margin-bottom: 16px;
@@ -1117,10 +1293,8 @@ img {
 
 .footer-subscribe .subtitle,
 .footer-follow-us .subtitle {
-    font-family: "Plus Jakarta Sans", Arial, sans-serif;
     font-size: 24px;
-    font-weight: 700;
-    line-height: 32px;
+    line-height: 1.33;
     text-align: left;
     color: var(--white);
     margin-bottom: 16px;
@@ -1131,26 +1305,28 @@ img {
     flex-direction: column;
 }
 
+/*.subscribe-wrapper {
+    display: flex;
+    gap: 8px;
+}*/
+
 .subscribe-input {
-    font-family: "Libre Franklin", Arial, sans-serif;
-    font-size: 16px;
-    font-weight: 400;
-    line-height: 24px;
+    line-height: 1.5;
     color: var(--black);
     background-color: var(--white);
     box-shadow: 0px 4px 30px 0px #1D395F0D;
     width: 321px;
-    border: none;
+    height: 64px;
+    border: 2px solid var(--white);
     border-radius: 10px;
     padding: 20px;
+    margin-right: 8px;
 
     outline: none;
 }
 
 .subscribe-input::placeholder {
-    font-size: 16px;
-    font-weight: 400;
-    line-height: 24px;
+    line-height: 1.5;
     color: #22222280;
     background-color: var(--white);
 }
@@ -1164,16 +1340,16 @@ img {
 }
 
 .footer-subscribe-btn {
-    font-family: "Libre Franklin", Arial, sans-serif;
-    font-size: 16px;
-    font-weight: 700;
-    line-height: 24px;
     text-align: center;
     color: var(--white);
     background-color: var(--blue);
     border: none;
     border-radius: 10px;
     padding: 20px 46px;
+}
+
+.footer-subscribe-btn:hover {
+    background-color: var(--dark-blue);
 }
 
 .footer-follow-list {
@@ -1187,6 +1363,14 @@ img {
     padding: 16px;
     border-radius: 32px;
     background-color: var(--light-blue);
+}
+
+.footer-follow-link {
+    display: flex;
+}
+
+.icon-instagram {
+    fill: var(--blue);
 }
 
 .footer-bottom {
@@ -1217,4 +1401,184 @@ img {
 
 
 
+/*------------------CONTACT-US PAGE------------------*/
+/*------------------CONTACT-US PAGE------------------*/
+/*------------------CONTACT-US PAGE------------------*/
 
+.in-touch {
+    background: linear-gradient(0.23deg, rgba(255, 255, 255, 0), rgba(240, 246, 253, 1));
+    margin-bottom: 120px;
+}
+
+.in-touch .container {
+    padding-top: 78px;
+}
+
+.get-in-touch {
+    display: flex;
+    gap: 96px;
+}
+
+.hero-contact {
+    display: flex;
+    flex-direction: column-reverse;
+}
+
+.section-label {
+    letter-spacing: 0.2em;
+    color: var(--blue);
+    text-align: left;
+    margin-bottom: 12px;
+}
+
+.hero-wrapper .text {
+   font-size: 20px;
+   text-align: left;
+   opacity: 70%;
+   margin-bottom: 32px;
+}
+
+.contact-list {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    margin-bottom: 48px;
+}
+
+.contact-item,
+.contact-link {
+font-family: Plus Jakarta Sans;
+font-size: 20px;
+font-weight: 700;
+text-align: left;
+color: var(--black);
+
+display: flex;
+gap: 20px;
+align-items: center;
+}
+
+.contact-item::before {
+    content: '';   
+    display: block;
+
+    width: 24px;
+    height: 24px;
+}
+
+.contact-item.icon-phone::before {
+    background: url(../img/icons/phone.svg);
+}
+
+.contact-item.icon-email::before {
+    background: url(../img/icons/email.svg);
+}
+
+.contact-item.icon-schedule::before {
+    background: url(../img/icons/clock.svg);
+}
+
+.contact-map {  
+    position: relative;
+}
+
+.online-map {
+    width: 554px;
+    height: 314px;
+    border-radius: 20px;
+    outline: none;
+}
+
+.online-map:focus {
+    outline: none;
+}
+
+.map-label {
+    display: flex;
+    align-items: center;
+    gap: 13px;
+    width: 347px;
+    height: 74px;
+    padding: 12px 16px;
+    border-radius: 10px;
+    background-color: var(--white);
+    box-shadow: 0px 4px 40px 0px #1D395F14;
+
+    position: absolute;
+    right: 16px;
+    bottom: 16px;
+}
+
+.location-title {
+    font-size: 16px;
+    font-weight: 700;
+    text-align: left;
+    margin-bottom: 2px;
+}
+
+.location-text {
+    text-align: left;
+    opacity: 70%;
+}
+
+.in-touch-form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 40px 40px 48px 40px;
+    border-radius: 20px;
+    background-color: var(--white);
+    box-shadow: 0px 4px 40px 0px #1D395F14;
+}
+
+.input-wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.input-label {
+    font-family: Plus Jakarta Sans;
+    font-size: 20px;
+    font-weight: 700;
+    text-align: left;
+
+}
+
+.in-touch-input {
+    width: 550px;
+    height: 64px;
+    border: 1px solid #22222226;
+    border-radius: 10px;
+    border: 1px solid #22222226;
+    padding: 20px;
+
+    outline: none;
+}
+
+.in-touch-textarea {
+    width: 550px;
+    height: 190px;
+    border: 1px solid #22222226;
+    border-radius: 10px;
+    border: 1px solid #22222226;
+    padding: 20px;
+
+    outline: none;
+    resize: none;
+}
+
+.in-touch-submit {
+    display: flex;
+    justify-content: space-between;
+}
+
+.in-touch-check {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+}
+
+.checkboxes {
+    display: flex;
+}
