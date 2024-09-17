@@ -1,915 +1,1089 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="icon" type="image/x-icon" href="/img/favicon.webp">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="icon"
+      type="image/png"
+      href="./favicon_io/android-chrome-512x512.png"
+      sizes="512x512"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      href="./favicon_io/android-chrome-192x192.png"
+      sizes="192x192"
+    />
+    <link
+      rel="apple-touch-icon"
+      type="image/png"
+      href="./favicon_io/apple-touch-icon.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      href="./favicon_io/favicon-32x32.png"
+      sizes="32x32"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      href="./favicon_io/favicon-16x16.png"
+      sizes="16x16"
+    />
+    <link rel="icon" type="image/png" href="./favicon_io/favicon.ico" />
     <title>Pixmart</title>
-    <link rel="stylesheet" href="./css/modern-normalize.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Libre+Franklin:ital,wght@0,100..900;1,100..900&family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap" rel="stylesheet">
-    <link rel="stylesheet" type="text/css" href="./css/styles.css">
-</head>
-<body>
+    <link rel="stylesheet" href="./css/modern-normalize.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      rel="preconnect"
+      href="https://fonts.googleapis.com/css2?family=Libre+Franklin:ital,wght@0,100..900;1,100..900&family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" type="text/css" href="./css/styles.css" />
+  </head>
+  <body>
     <header class="header">
-        <div class="header-section container">
-            <div class="navigation-wrapper">
-                <a href="./index.html" class="logo">
-                    Pixmart.
+      <div class="header-section container">
+        <div class="navigation-wrapper">
+          <a href="#" class="logo"> Pixmart. </a>
+          <nav class="header-navigation">
+            <ul class="list">
+              <li class="item">
+                <a href="./about.html" class="link" title="about">About</a>
+              </li>
+              <li class="item products">
+                <a href="./catalog.html" class="link" title="products">
+                  Products
                 </a>
-                <nav class="header-navigation">
-                    <ul class="list">
-                        <li class="item">
-                            <a href="#" class="link">About</a>
-                        </li>
-                        <li class="item">
-                            <a href="./catalog.html" class="link products">
-                                Products
-                            </a>
-                        </li>
-                        <li class="item">
-                            <a href="#" class="link">
-                                Creators
-                                <sup class="item-superscript">new</sup>
-                            </a>
-                        </li>
-                        <li class="item">
-                            <a href="#" class="link">Blog</a>
-                        </li>
-                        <li class="item">
-                            <a href="./contact.html" class="link">Contact</a>
-                        </li>
-                    </ul>
-                </nav>
-            </div>
-            <div class="actions-wrapper">
-                <ul class="actions-list">
-                    <li class="login">
-                        <button class="action-button user-btn" type="button">
-                            <svg class="user" width="24" height="24">
-                                <use href="./img/icons/sprite.svg#icon-user"></use>
-                            </svg>
-                        </button>
-                    </li>
-                    <li class="cart">
-                        <button class="action-button cart-btn" type="button">
-                            <svg class="cart" width="24" height="24">
-                                <use href="./img/icons/sprite.svg#icon-cart"></use>
-                            </svg>
-                        </button>
-                    </li>
-                </ul>
-            </div>
-
-            
+              </li>
+              <li class="item creator">
+                <a href="./creators.html" class="link" title="creators">
+                  Creators
+                </a>
+              </li>
+              <li class="item">
+                <a href="./blog.html" class="link" title="blog">Blog</a>
+              </li>
+              <li class="item">
+                <a href="./contact.html" class="link" title="contact"
+                  >Contact</a
+                >
+              </li>
+            </ul>
+          </nav>
         </div>
+        <ul class="action-list">
+          <li class="action-item">
+            <button class="action-button user-btn" type="button">
+              <svg class="user" width="24" height="24">
+                <use href="./img/icons/sprite.svg#icon-user"></use>
+              </svg>
+            </button>
+          </li>
+          <li class="action-item">
+            <button class="action-button cart-btn" type="button">
+              <svg class="cart" width="24" height="24">
+                <use href="./img/icons/sprite.svg#icon-cart"></use>
+              </svg>
+            </button>
+          </li>
+        </ul>
+      </div>
     </header>
     <main class="page-content">
-        <section class="hero-section">
-            <div class="hero container">
-                <div class="hero-describe-part">
-                    <h1 class="hero-title">Ignite Your Creativity with <span class="accent">Premium</span> Designs
-                    </h1>
-                    <p class="hero-text">
-                        Discover, explore, and purchase the finest digital design assets that is tailored for your needs, all within our platform.
-                    </p>
-                    <form class="search-form" action="#" method="get">
-                        <input class="search-input" 
-                            type="text" 
-                            autocomplete="off"
-                            name="search"
-                            placeholder="Find fonts, design templates, and more…">
-                        <button class="search-btn button" type="submit">Search Now</button>
-                    </form>
+      <section class="hero-section">
+        <div class="hero container">
+          <div class="hero-describe-part">
+            <h1 class="hero-title">
+              Ignite Your Creativity with
+              <span class="accent">Premium</span>
+              Designs
+            </h1>
+            <p class="hero-text">
+              Discover, explore, and purchase the finest digital design assets
+              that is tailored for your needs, all within our platform.
+            </p>
+            <form class="search-form" action="#" method="get">
+              <input
+                class="search-input"
+                type="text"
+                autocomplete="off"
+                name="search"
+                placeholder="Find fonts, design templates, and more…"
+              />
+              <button class="search-btn button" type="submit">
+                Search Now
+              </button>
+            </form>
+          </div>
+          <figure class="hero-images-part">
+            <img
+              class="big-img"
+              src="./img/hero/big-image.webp"
+              alt="Three options for mobile design templates"
+              width="518"
+              height="314"
+            />
+            <div class="wrapper">
+              <img
+                class="Collection of pre-designed templates for LinkedIn posts"
+                src="./img/hero/medium-image.webp"
+                alt="medium-img"
+                width="316"
+                height="238"
+              />
+              <div class="wrapper-two">
+                <img
+                  class="small-img"
+                  src="./img/hero/small-image.webp"
+                  alt="Template of contact page"
+                  width="193"
+                  height="128"
+                />
+                <div class="hero-sum-info">
+                  <p class="num subtitle">10,000+</p>
+                  <p class="text">Digital Design Assets</p>
                 </div>
-                <figure class="hero-images-part">
-                    <img class="big-img"
-                        src="./img/hero/big-image.webp" 
-                        alt="Three options for mobile design templates"
-                        width="518" height="314">
-                        <div class="wrapper">
-                            <img class="Collection of pre-designed templates for LinkedIn posts"
-                            src="./img/hero/medium-image.webp" 
-                            alt="medium-img"
-                            width="316" height="238">
-                            <div class="wrapper-two">
-                                <img class="small-img"
-                                src="./img/hero/small-image.webp" 
-                                alt="Template of contact page"
-                                width="193" height="128">
-                                <div class="hero-sum-info">
-                                    <p class="num subtitle">10,000+</p>
-                                    <p class="text">Digital Design Assets</p>
-                                </div>
-                            </div>
-                        </div>
-                </figure>
+              </div>
             </div>
-        </section>
-        <section class="categories-section">
-            <div class="container">
-                <h2 class="title categories">CATEGORIES</h2>
-                <p class="subtitle categories">
-                    What are You <br> Looking For Here?
+          </figure>
+        </div>
+      </section>
+      <section class="categories-section">
+        <div class="container">
+          <h2 class="title categories">CATEGORIES</h2>
+          <p class="subtitle categories">
+            What are You <br />
+            Looking For Here?
+          </p>
+          <ol class="categories-list">
+            <li class="categories-item">
+              <article class="categories-card">
+                <a href="#" class="categories-link">
+                  <img
+                    class="image"
+                    src="./img/categories/ui-design.webp"
+                    alt="img_UI Kits Design"
+                    width="201"
+                    height="237"
+                  />
+                  <h3 class="card-title">UI Kits Design</h3>
+                </a>
+              </article>
+            </li>
+            <li class="categories-item">
+              <article class="categories-card">
+                <a href="#" class="categories-link">
+                  <img
+                    class="img"
+                    src="./img/categories/social-media.webp"
+                    alt="img_Social Media"
+                    width="201"
+                    height="237"
+                  />
+                  <h3 class="card-title">Social Media</h3>
+                </a>
+              </article>
+            </li>
+            <li class="categories-item">
+              <article class="categories-card">
+                <a href="#" class="categories-link">
+                  <img
+                    class="img"
+                    src="./img/categories/font-design.webp"
+                    alt="img_Font Design"
+                    width="201"
+                    height="237"
+                  />
+                  <h3 class="card-title">Font Design</h3>
+                </a>
+              </article>
+            </li>
+            <li class="categories-item">
+              <article class="categories-card">
+                <a href="#" class="categories-link">
+                  <img
+                    class="img"
+                    src="./img/categories/ppt-slides.webp"
+                    alt="img_PPT Slides"
+                    width="201"
+                    height="237"
+                  />
+                  <h3 class="card-title">PPT Slides</h3>
+                </a>
+              </article>
+            </li>
+            <li class="categories-item">
+              <article class="categories-card">
+                <a href="#" class="categories-link">
+                  <img
+                    class="img"
+                    src="./img/categories/illust-design.webp"
+                    alt="img_Illust Design"
+                    width="201"
+                    height="237"
+                  />
+                  <h3 class="card-title">Illust Design</h3>
+                </a>
+              </article>
+            </li>
+            <li class="categories-item">
+              <article class="categories-card">
+                <a href="#" class="categories-link">
+                  <img
+                    class="img"
+                    src="./img/categories/print-template.webp"
+                    alt="img_Print Template"
+                    width="201"
+                    height="237"
+                  />
+                  <h3 class="card-title">Print Template</h3>
+                </a>
+              </article>
+            </li>
+          </ol>
+        </div>
+      </section>
+      <section class="trending-section">
+        <div class="container">
+          <h2 class="title trending">TRENDING</h2>
+          <div class="trending-wrapper">
+            <p class="subtitle trending">Popular Products</p>
+            <div class="trending-scrollbar">
+              <button type="button" class="scrollbar-btn">
+                <svg class="icon-arrow" width="32" height="32">
+                  <use href="./img/icons/sprite.svg#icon-arrow-left"></use>
+                </svg>
+              </button>
+              <button type="button" class="scrollbar-btn">
+                <svg class="icon-arrow next" width="32" height="32">
+                  <use href="./img/icons/sprite.svg#icon-arrow-left"></use>
+                </svg>
+              </button>
+            </div>
+          </div>
+          <div class="trending-product-info">
+            <ul class="trending-list">
+              <li class="trending-item">
+                <article class="trending-card">
+                  <a href="#" class="trending-link">
+                    <img
+                      class="image"
+                      src="./img/trending/y2k.webp"
+                      alt="Collection of retro-futuristic elements in a Y2K style"
+                      width="305"
+                      height="328"
+                    />
+                    <div class="trending-card-info">
+                      <h3 class="card-title">Y2K</h3>
+                      <p class="card-price">$12.00</p>
+                    </div>
+                    <div class="trending-card-descr">
+                      <p class="text">Decorative Element</p>
+                      <span class="dot"></span>
+                      <p class="text">Elements Set</p>
+                    </div>
+                    <span class="trending-popular-btn">
+                      <svg class="icon-cup" width="24" height="24">
+                        <use href="./img/icons/sprite.svg#icon-cup"></use>
+                      </svg>
+                    </span>
+                  </a>
+                </article>
+              </li>
+              <li class="trending-item">
+                <article class="trending-card">
+                  <a href="#" class="trending-link">
+                    <img
+                      class="image"
+                      src="./img/trending/vacasky.webp"
+                      alt="Tour & travel agency website template"
+                      width="305"
+                      height="328"
+                    />
+                    <div class="trending-card-info">
+                      <h3 class="card-title">Vacasky</h3>
+                      <p class="card-price">$8.00</p>
+                    </div>
+                    <div class="trending-card-descr">
+                      <p class="text">Travel</p>
+                      <span class="dot"></span>
+                      <p class="text">UI kit</p>
+                    </div>
+                    <span class="trending-popular-btn">
+                      <svg class="icon-cup" width="24" height="24">
+                        <use href="./img/icons/sprite.svg#icon-cup"></use>
+                      </svg>
+                    </span>
+                  </a>
+                </article>
+              </li>
+              <li class="trending-item">
+                <article class="trending-card">
+                  <a href="#" class="trending-link">
+                    <img
+                      class="image"
+                      src="./img/trending/syrios.webp"
+                      alt="Syrios business plan presentation"
+                      width="305"
+                      height="328"
+                    />
+                    <div class="trending-card-info">
+                      <h3 class="card-title">Syrios</h3>
+                      <p class="card-price">$10.00</p>
+                    </div>
+                    <div class="trending-card-descr">
+                      <p class="text">Modern Business</p>
+                      <span class="dot"></span>
+                      <p class="text">Presentation</p>
+                    </div>
+                    <span class="trending-popular-btn">
+                      <svg class="icon-cup" width="24" height="24">
+                        <use href="./img/icons/sprite.svg#icon-cup"></use>
+                      </svg>
+                    </span>
+                  </a>
+                </article>
+              </li>
+              <li class="trending-item">
+                <article class="trending-card">
+                  <a href="#" class="trending-link">
+                    <img
+                      class="image"
+                      src="./img/trending/strategy.webp"
+                      alt="Strategy workspace"
+                      width="305"
+                      height="328"
+                    />
+                    <div class="trending-card-info">
+                      <h3 class="card-title">Strategy</h3>
+                      <p class="card-price">$16.00</p>
+                    </div>
+                    <div class="trending-card-descr">
+                      <p class="text">Media Kit</p>
+                      <span class="dot"></span>
+                      <p class="text">Concept</p>
+                    </div>
+                    <span class="trending-popular-btn">
+                      <svg class="icon-cup" width="24" height="24">
+                        <use href="./img/icons/sprite.svg#icon-cup"></use>
+                      </svg>
+                    </span>
+                  </a>
+                </article>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </section>
+      <section class="promo-section">
+        <div class="container">
+          <h2 hidden>Promo</h2>
+          <aside class="promo-invitation">
+            <p class="promo-text subtitle">Refer A Friend, Earn A Reward!</p>
+            <button type="button" class="promo-btn button">
+              Get Your Code
+            </button>
+          </aside>
+          <div class="promo-designs">
+            <div class="promo-designs-wrapper">
+              <div class="promo-describe">
+                <p class="subtitle promo">New Week, New Designs</p>
+                <p class="text">
+                  Enjoy a special 15% discount on all our Design Assets for our
+                  weekly collection, available right away within this month
+                  promotion.
                 </p>
-                <ol class="categories-list">
-                    <li class="categories-item">
-                        <article class="categories-card">
-                            <a href="#" class="categories-link">
-                                <img class="image"
-                                    src="./img/categories/ui-design.webp" 
-                                    alt="img_UI Kits Design" class="categories-img"
-                                    width="201" height="237">
-                                <div class="wrapper">
-                                    <h3 class="card-title">UI Kits Design</h3> 
-                                    <p class="label">/ 01</p>
-                                </div>
-                            </a>
-                        </article>
-                    </li>
-                    <li class="categories-item">
-                        <article class="categories-card">
-                            <a href="#" class="categories-link">
-                                <img class="img"
-                                    src="./img/categories/social-media.webp" 
-                                    alt="img_Social Media" 
-                                    width="201" height="237">
-                                <div class="wrapper">
-                                    <h3 class="card-title">Social Media</h3>
-                                    <p class="label">/ 02</p>
-                                </div>
-                            </a>
-                        </article>
-                    </li>
-                    <li class="categories-item">
-                        <article class="categories-card">
-                            <a href="#" class="categories-link">
-                                <img class="img"
-                                    src="./img/categories/font-design.webp" 
-                                    alt="img_Font Design"
-                                    width="201" height="237">
-                                    <div class="wrapper">
-                                        <h3 class="card-title">Font Design</h3>
-                                        <p class="label">/ 03</p>
-                                    </div>
-                            </a>
-                        </article>
-                    </li>
-                    <li class="categories-item">
-                        <article class="categories-card">
-                            <a href="#" class="categories-link">
-                                <img class="img"
-                                    src="./img/categories/ppt-slides.webp" 
-                                    alt="img_PPT Slides"
-                                    width="201" height="237">
-                                    <div class="wrapper">
-                                        <h3 class="card-title">PPT Slides</h3>
-                                        <p class="label">/ 04</p>
-                                    </div>
-                            </a>
-                        </article>
-                    </li>
-                    <li class="categories-item">
-                        <article class="categories-card">
-                            <a href="#" class="categories-link">
-                                <img class="img"
-                                    src="./img/categories/illust-design.webp" 
-                                    alt="img_Illust Design"
-                                    width="201" height="237">   
-                                <div class="wrapper">
-                                    <h3 class="card-title">Illust Design</h3>
-                                    <p class="label">/ 05</p>
-                                </div>    
-                            </a>
-                        </article>
-                    </li>
-                    <li class="categories-item">
-                        <article class="categories-card">
-                            <a href="#" class="categories-link">
-                                <img class="img"
-                                    src="./img/categories/print-template.webp" 
-                                    alt="img_Print Template"
-                                    width="201" height="237">
-                                <div class="wrapper">
-                                    <h3 class="card-title">Print Template</h3>
-                                    <p class="label">/ 06</p>
-                                </div>    
-                            </a>
-                        </article>
-                    </li>
-                </ol>
+                <a href="./catalog.html" class="shopping-link button"
+                  >Shop Now</a
+                >
+              </div>
             </div>
-        </section>
-        <section class="trending-section">
-            <div class="container">
-                <h2 class="title trending">TRENDING</h2>
-                <div class="trending-wrapper">
-                    <p class="subtitle trending">Popular Products</p>
-                    <div class="trending-scrollbar">
-                        <button type="button" class="scrollbar-btn">
-                            <svg class="icon-arrow" width="32" height="32">
-                                <use href="./img/icons/sprite.svg#icon-arrow-left"></use>
-                            </svg>
-                        </button>
-                        <button type="button" class="scrollbar-btn">
-                            <svg class="icon-arrow" width="32" height="32">
-                                <use href="./img/icons/sprite.svg#icon-arrow-right"></use>
-                            </svg>
-                        </button>
+          </div>
+        </div>
+      </section>
+      <section class="release-section">
+        <div class="container">
+          <h2 class="title release">NEW RELEASE</h2>
+          <div class="release-wrapper">
+            <p class="subtitle release">Latest Products</p>
+            <a href="#" class="release-link">
+              Explore Latest Work
+              <svg class="icon-arrow next" width="24" height="24">
+                <use href="./img/icons/sprite.svg#icon-arrow-left"></use>
+              </svg>
+            </a>
+          </div>
+          <div class="latest-products">
+            <ul class="products-list">
+              <li class="products-item">
+                <article class="product-card">
+                  <a href="#" class="product-link">
+                    <img
+                      class="image"
+                      src="./img/release/sky-home.webp"
+                      alt="SkyHomes real estate landing page"
+                      width="160"
+                      height="160"
+                    />
+                    <div class="product-info">
+                      <h3 class="product-title">SkyHomes</h3>
+                      <p class="product-text">Landing Page</p>
+                      <div class="product-price-wrapper">
+                        <p class="product-price">$6.00</p>
+                        <span class="product-cart button">
+                          <svg class="icon-cart" width="24" height="24">
+                            <use href="./img/icons/sprite.svg#icon-cart"></use>
+                          </svg>
+                        </span>
+                      </div>
                     </div>
-                </div>
-                <div class="trending-product-info">
-                    <ul class="trending-list">
-                        <li class="trending-item">
-                            <article class="trending-card">
-                                <a href="#" class="trending-link">
-                                    <img class="image"
-                                        src="./img/trending/y2k.webp" 
-                                        alt="Collection of retro-futuristic elements in a Y2K style" 
-                                        width="305" height="328">
-                                    <div class="trending-card-info">
-                                        <h3 class="card-title">Y2K</h3>
-                                        <p class="card-price">$12.00</p>
-                                    </div>
-                                    <div class="trending-card-descr">
-                                        <p class="text">Decorative Element</p>
-                                        <p class="dot"></p>
-                                        <p class="text">Elements Set</p>   
-                                    </div>  
-                                    <button class="trending-popular-btn" type="button">
-                                        <svg class="icon-cup" width="24" heigt="24">
-                                            <use href="./img/icons/sprite.svg#icon-cup"></use>
-                                        </svg> 
-                                    </button>  
-                                </a>
-                            </article>                
-                        </li>
-                        <li class="trending-item">
-                            <article class="trending-card">
-                                <a href="#" class="trending-link">
-                                    <img class="image"
-                                    src="./img/trending/vacasky.webp" 
-                                    alt="Tour & travel agency website template"
-                                    width="305" height="328">
-                                    <div class="trending-card-info">
-                                        <h3 class="card-title">Vacasky</h3>
-                                        <p class="card-price">$8.00</p>
-                                    </div>
-                                    <div class="trending-card-descr">
-                                        <p class="text">Travel</p>
-                                        <p class="dot"></p>
-                                        <p class="text">UI kit</p>
-                                    </div>
-                                    <button class="trending-popular-btn" type="button">
-                                        <svg class="icon-cup" width="24" heigt="24">
-                                            <use href="./img/icons/sprite.svg#icon-cup"></use>
-                                        </svg> 
-                                    </button> 
-                                </a>
-                            </article>          
-                        </li>
-                        <li class="trending-item">
-                            <article class="trending-card">
-                                <a href="#" class="trending-link">
-                                    <img class="image"
-                                    src="./img/trending/syrios.webp" 
-                                    alt="Syrios business plan presentation"
-                                    width="305" height="328">
-                                    <div class="trending-card-info">
-                                        <h3 class="card-title">Syrios</h3>
-                                        <p class="card-price">$10.00</p>
-                                    </div>
-                                    <div class="trending-card-descr">
-                                        <p class="text">Modern Business</p>
-                                        <p class="dot"></p>
-                                        <p class="text">Presentation</p>
-                                    </div>
-                                    <button class="trending-popular-btn" type="button">
-                                        <svg class="icon-cup" width="24" heigt="24">
-                                            <use href="./img/icons/sprite.svg#icon-cup"></use>
-                                        </svg> 
-                                    </button> 
-                                </a>
-                            </article>   
-                        </li>
-                        <li class="trending-item">
-                            <article class="trending-card">
-                                <a href="#" class="trending-link">
-                                    <img class="image"
-                                    src="./img/trending/strategy.webp" 
-                                    alt="Strategy workspace"
-                                    width="305" height="328">
-                                    <div class="trending-card-info">
-                                        <h3 class="card-title">Strategy</h3>
-                                        <p class="card-price">$16.00</p>
-                                    </div>
-                                    <div class="trending-card-descr">
-                                        <p class="text">Media Kit</p>
-                                        <p class="dot"></p>
-                                        <p class="text">Concept</p>
-                                    </div>
-                                    <button class="trending-popular-btn" type="button">
-                                        <svg class="icon-cup" width="24" heigt="24">
-                                            <use href="./img/icons/sprite.svg#icon-cup"></use>
-                                        </svg> 
-                                    </button> 
-                                </a>
-                            </article>   
-                        </li>
-                    </ul>
-                </div>
-            </div>
-        </section>
-        <section class="promo-section">
-            <div class="container">
-                <h2 hidden>Promo</h2>
-
-                <aside class="promo-invitation">
-                    <p class="promo-text subtitle">Refer A Friend, Earn A Reward!</p>
-                    <button type="button" class="promo-btn button">Get Your Code</button>
-                </aside>
-
-                <div class="promo-designs">
-                    <div class="promo-designs-wrapper">
-                        <div class="promo-describe">
-                            <p class="subtitle promo">New Week, New Designs</p>
-                            <p class="text">
-                                Enjoy a special 15% discount on all our Design Assets for our weekly collection, available right away within this month promotion.
-                            </p>
-                            <a href="./catalog.html" class="shopping-link button">Shop Now</a>
-                        </div>
+                  </a>
+                </article>
+              </li>
+              <li class="products-item">
+                <article class="product-card">
+                  <a href="#" class="product-link">
+                    <img
+                      class="image"
+                      src="./img/release/my-estate.webp"
+                      alt="MyEstate landing page"
+                      width="160"
+                      height="160"
+                    />
+                    <div class="product-info">
+                      <h3 class="product-title">MyEstate</h3>
+                      <p class="product-text">Figma Template</p>
+                      <div class="product-price-wrapper">
+                        <p class="product-price">$8.00</p>
+                        <span class="product-cart button">
+                          <svg class="icon-cart" width="24" height="24">
+                            <use href="./img/icons/sprite.svg#icon-cart"></use>
+                          </svg>
+                        </span>
+                      </div>
                     </div>
-                </div>
-                
-            </div>
-        </section>
-        <section class="release-section">
-            <div class="container">
-                <h2 class="title release">NEW RELEASE</h2>
-                <div class="release-wrapper">
-                    <p class="subtitle release">Latest Products</p>
-                    <a href="#" class="release-link">
-                        Explore Latest Work
-                        <svg class="icon-arrow" width="24" height="24">
-                            <use href="./img/icons/sprite.svg#icon-arrow-right-s"></use>
-                        </svg>
-                    </a>
-                </div>
-                <div class="latest-products">
-                    <ul class="products-list">
-                        <li class="products-item">
-                            <article class="product-card">
-                                <a href="#" class="product-link">
-                                    <img class="image"
-                                        src="./img/release/sky-home.webp" 
-                                        alt="SkyHomes real estate landing page" 
-                                        width="160" height="160">
-                                        <div class="product-info">
-                                            <h3 class="product-title">SkyHomes</h3>
-                                            <p class="product-text">Landing Page</p>
-                                            <div class="product-price-wrapper">
-                                                <p class="product-price">$6.00</p>
-                                                <span class="product-cart button">
-                                                    <svg class="icon-cart"  width="24" heigt="24">
-                                                        <use href="./img/icons/sprite.svg#icon-cart"></use>
-                                                    </svg>
-                                                </span>
-                                            </div>
-                                        </div>
-                                </a>
-                            </article>
-                        </li>
-                        <li class="products-item">
-                            <article class="product-card">
-                                <a href="#" class="product-link">
-                                    <img class="image"
-                                        src="./img/release/my-estate.webp" 
-                                        alt="MyEstate landing page"
-                                        width="160" height="160">
-                                    <div class="product-info">
-                                        <h3 class="product-title">MyEstate</h3>
-                                        <p class="product-text">Figma Template</p>
-                                        <div class="product-price-wrapper">
-                                            <p class="product-price">$8.00</p>
-                                            <span class="product-cart button">
-                                                <svg class="icon-cart"  width="24" heigt="24">
-                                                    <use href="./img/icons/sprite.svg#icon-cart"></use>
-                                                </svg>
-                                            </span>
-                                        </div>
-                                    </div>
-
-                                </a>
-                            </article>
-                        </li>
-                        <li class="products-item">
-                            <article class="product-card">
-                                <a href="#" class="product-link">
-                                    <img class="image"
-                                        src="./img/release/business-inst.webp" 
-                                        alt="Business Instagram landing page"
-                                        width="160" height="160">
-                                    <div class="product-info">
-                                        <h3 class="product-title">Business Instagram</h3>
-                                        <p class="product-text">Canva</p>
-                                        <div class="product-price-wrapper">
-                                            <p class="product-price">$10.00</p>
-                                            <span class="product-cart button">
-                                                <svg class="icon-cart"  width="24" heigt="24">
-                                                    <use href="./img/icons/sprite.svg#icon-cart"></use>
-                                                </svg>
-                                            </span>
-                                        </div>
-                                    </div>
-                                </a>
-                            </article>
-                        </li>
-                        <li class="products-item">
-                            <article class="product-card">
-                                <a href="#" class="product-link">
-                                    <img class="image"
-                                        src="./img/staff-picks/elegant.webp" 
-                                        alt="Elegant Instagram landing page"
-                                        width="160" height="160">
-                                    <div class="product-info">
-                                        <h3 class="product-title">Elegant</h3>
-                                        <p class="product-text">Instagram Template</p>
-                                        <div class="product-price-wrapper">
-                                            <p class="product-price">$12.00</p>
-                                            <span class="product-cart button">
-                                                <svg class="icon-cart"  width="24" heigt="24">
-                                                    <use href="./img/icons/sprite.svg#icon-cart"></use>
-                                                </svg>
-                                            </span>
-                                        </div>
-                                    </div>
-                                </a>
-                            </article>
-                        </li>
-                        <li class="products-item">
-                            <article class="product-card">
-                                <a href="#" class="product-link">
-                                    <img class="image"
-                                        src="./img/staff-picks/vonix.webp" 
-                                        alt="Digital mockup of Vonix company profile template."
-                                        width="160" height="160">
-                                    <div class="product-info">
-                                        <h3 class="product-title">Vonix</h3>
-                                        <p class="product-text">Presentation</p>
-                                        <div class="product-price-wrapper">
-                                            <p class="product-price">$20.00</p>
-                                            <span class="product-cart button">
-                                                <svg class="icon-cart"  width="24" heigt="24">
-                                                    <use href="./img/icons/sprite.svg#icon-cart"></use>
-                                                </svg>
-                                            </span>
-                                        </div>
-                                    </div>
-                                </a>
-                            </article>
-                        </li>
-                        <li class="products-item">
-                            <article class="product-card">
-                                <a href="#" class="product-link">
-                                    <img class="image"
-                                        src="./img/staff-picks/avery.webp" 
-                                        alt="Modern Corporate monthly progress report presentation"
-                                        width="160" height="160">
-                                    <div class="product-info">
-                                        <h3 class="product-title">Avery</h3>
-                                        <p class="product-text">Presentation</p>
-                                        <div class="product-price-wrapper">
-                                            <p class="product-price">$6.00</p>
-                                            <span class="product-cart button">
-                                                <svg class="icon-cart"  width="24" heigt="24">
-                                                    <use href="./img/icons/sprite.svg#icon-cart"></use>
-                                                </svg>
-                                            </span>
-                                        </div>
-                                    </div>
-                                </a>
-                            </article>
-                        </li>                
-                    </ul>
-                </div>
-            </div>
-        </section>
-        <section class="staff-picks-section">
-            <div class="container">
-                <h2 class="title staff-picks">STAFF PICKS</h2>
-                <p class="subtitle staff-picks">Best Design Works<br> Curated by Our Experts</p>
-                <div class="staff-picks-best-works">
-                    <ol class="staff-picks-list">
-                        <li class="staff-picks-item">
-                            <article class="staff-picks-card">
-                                <a href="#" class-="staff-picks-link">
-                                    <img class="image"
-                                    src="./img/staff-picks/petrolink.webp" 
-                                    alt="Website design for an oil and gas company PetroLink"
-                                    width="250" height="244">
-                                    <p class="card-title">PetroLink</p>
-                                    <div class="staff-picks-descr">
-                                        <p class="text">Business</p>
-                                        <p class="dot"></p>
-                                        <p class="text">Figma Template</p>   
-                                    </div>  
-                                    <p class="staff-picks-label">02</p>
-                                </a>
-                            </article>
-                        </li>
-                        <li class="staff-picks-item">
-                            <article class="staff-picks-card">
-                                <a href="#" class-="staff-picks-link">
-                                    <img class="image"
-                                        src="./img/staff-picks/glowieng.webp" 
-                                        alt="Website design for Glowieng company"
-                                        width="620" height="300">
-                                    <p class="card-title">Glowieng</p>
-                                    <div class="staff-picks-wrapper">
-                                        <div class="staff-picks-descr">
-                                            <p class="text">Freelancer & Project Marketplace</p>
-                                            <p class="dot"></p>
-                                            <p class="text">Figma Template</p> 
-                                        </div>  
-                                        <div class="product-cart button">
-                                            <svg class="icon-cart"  width="24" heigt="24">
-                                                <use href="./img/icons/sprite.svg#icon-cart"></use>
-                                            </svg>  
-                                        </div> 
-                                    </div>
-                                    <p class="staff-picks-label main">01</p> 
-                                </a>
-                            </article>
-                        </li>
-                        <li class="staff-picks-item">
-                            <article class="staff-picks-card">
-                                <a href="#" class-="staff-picks-link">
-                                    <img class="image"
-                                        src="./img/staff-picks/sparkr.webp"  
-                                        alt="Website design for Sparkr company"
-                                        width="250" height="244">
-                                    <p class="card-title">Sparkr</p>
-                                    <div class="staff-picks-descr">
-                                        <p class="text">Business Plan</p>
-                                        <p class="dot"></p>
-                                        <p class="text">Figma Template</p>   
-                                    </div> 
-                                    <p class="staff-picks-label">03</p>
-                                </a>
-                            </article>
-                        </li>
-                    </ol>
-                </div>
-            </div>
-        </section>
-        <section class="creators-section">
-            <div class="container">
-                <h2 class="title creators">CREATORS</h2>
-                <div class="creators-heading">
-                    <p class="subtitle creators">Top Creators</p>
-                    <a href="#" class="creators-explore-link">
-                        Explore All Creators
-                        <svg class="icon-arrow" width="24" height="24">
-                            <use href="./img/icons/sprite.svg#icon-arrow-right-s"></use>
-                        </svg>
-                    </a>
-                </div>
-                <ul class="creators-list">
-                    <li class="creators-item">
-                        <article class="creators-card">
-                            <img class="image"
-                            src="./img/top-creators/text.webp" 
-                            alt="Text creator avatar" 
-                            width="80" height="80">
-                        <h3 class="card-heading">Text</h3>
-                        <p class="card-text">120+ Works</p>
-                        <button type="button" class="card-btn button">Text</button>
-                        </article> 
-                    </li>
-                    <li class="creators-item">
-                        <article class="creators-card">
-                            <img class="image"
-                            src="./img/top-creators/code-wizards.webp" 
-                            alt="Code wizards creator avatar" 
-                            width="80" height="80">
-                            <h3 class="card-heading">Code Wizards</h3>
-                            <p class="card-text">80+ Works</p>
-                            <button type="button" class="card-btn button">Text</button>
-                        </article> 
-                    </li>
-                    <li class="creators-item">
-                        <article class="creators-card">
-                            <img class="image"
-                            src="./img/top-creators/pixel-perfect.webp" 
-                            alt="Pixel perfect creator avatar" 
-                            width="80" height="80">
-                            <h3 class="card-heading">Pixel Perfect</h3>
-                            <p class="card-text">200+ Works</p>
-                            <button type="button" class="card-btn button">Text</button>
-                        </article> 
-                    </li>
-                    <li class="creators-item">
-                        <article class="creators-card">
-                            <img class="image"
-                            src="./img/top-creators/animate-canvas.webp" 
-                            alt="Animate canvas creator avatar" 
-                            width="80" height="80">
-                            <h3 class="card-heading">Animate Canvas</h3>
-                            <p class="card-text">60+ Works</p>
-                            <button type="button" class="card-btn button">Text</button>
-                        </article> 
-                    </li>
-                    <li class="creators-item">
-                        <article class="creators-card">
-                            <img class="image"
-                            src="./img/top-creators/modernist-logos.webp" 
-                            alt="Modernist logos creator avatar" 
-                            width="80" height="80">
-                            <h3 class="card-heading">Modernist Logos</h3>
-                            <p class="card-text">150+ Works</p>
-                            <button type="button" class="card-btn button">Text</button>
-                        </article> 
-                    </li>
-                </ul>
-            </div>
-        </section>
-        <section class="faq-section">
-            <div class="faq-wrapper container">
-                <div class="faq-info">
-                    <h2 class="title faq">F.A.Q</h2>
-                    <p class="subtitle faq">Answers to <br> Your Questions</p>
-                    <button type="button" class="ask-us button">Ask Us A Question</button>
-                </div>
-                <div class="faq-popular">
-                    <details class="faq-list">
-                        <summary class="faq-item">
-                            Can I request a refund?
-                        </summary>
-                    </details>
-                    <details class="faq-list">
-                        <summary class="faq-item">
-                            How do I access my purchased products?
-                        </summary>
-                        <p class="faq-item-text">Accessing your purchased products is seamless and hassle-free on our digital design marketplace. Simply log in to your account, navigate to the 'My Purchases' section.</p>
-                    </details>
-                    <details class="faq-list">
-                        <summary class="faq-item">
-                            Are there any discounts for bulk purchases?
-                        </summary>
-                    </details>
-                    <details class="faq-list">
-                        <summary class="faq-item">
-                            What payment methods do you accept here?
-                        </summary>
-                    </details>
-                    <details class="faq-list">
-                        <summary class="faq-item">
-                            Can I sell my digital products on this marketplace?
-                        </summary>
-                    </details>
-                </div>
-            </div>
-        </section>
-        <section class="blog-section" >
-            <div class="container">
-                <h2 class="title blog">BLOG</h2>
-                <p class="subtitle blog">Latest Expert<br> Design Tips & Insights</p>
-                <div class="blog-tips">
-                    <ul class="blog-list">
-                        <li class="blog-item">
-                            <article class="blog-card">
-                                <a href="" class="blog-link">
-                                    <div class="blog-picture-wrapper">
-                                        <img class="image"
-                                            src="./img/blog/design-infographic.webp" 
-                                            alt="Dark mode design infographic"
-                                            width="373" height="272">
-                                        <p class="card-label">TYPOGRAPHY</p>
-                                    </div>
-                                    <h3 class="card-title">Best Practice for Dark Mode UI Design: 5 Reasons for Its Increased Popularity</h3>
-                                    <time class="card-date" datetime="2024-04-05" >5 APRIL 2024</time>
-                                </a>
-                            </article>
-                        </li>
-                        <li class="blog-item">
-                            <article class="blog-card">
-                                <a href="" class="blog-link">
-                                    <div class="blog-picture-wrapper">
-                                        <img class="image"
-                                            src="./img/blog/color-inspirations.webp" 
-                                            alt="Сolor palette inspiration guide"
-                                            width="373" height="272">
-                                        <p class="card-label">UI/UX DESIGN</p>
-                                    </div>
-                                    <h3 class="card-title">Looking for Color Inspirations for Your Food Business?</h3>
-                                    <time class="card-date" datetime="2024-03-16">16 MARCH 2024</time>
-                                </a>
-                            </article>
-                        </li>
-                        <li class="blog-item">
-                            <article class="blog-card">
-                                <a href="" class="blog-link">
-                                    <div class="blog-picture-wrapper">
-                                        <img class="image"
-                                            src="./img/blog/presentation-templates.webp" 
-                                            alt="Dark mode design infographic"
-                                            width="373" height="272">
-                                        <p class="card-label">TYPOGRAPHY</p>
-                                    </div>
-                                    <h3 class="card-title">6 Most Recommended Dental Presentation Templates</h3>
-                                    <time class="card-date" datetime="2024-02-27">27 FEBRUARY 2024</time>
-                                </a>
-                            </article>
-                        </li>
-                    </ul>
-                    
-                </div>
-                <div class="blog-pagination">
-                    <button class="scrollbar-btn" type="button">
-                        <svg class="icon-arrow" width="24" height="24">
-                            <use href="./img/icons/sprite.svg#icon-arrow-left-m"></use>
-                        </svg>
-                    </button>
-                    <ul class="blog-pagination-list">
-                        <li class="blog-pagination-item">
-                            <button class="blog-pagination-btn"></button>
-                        </li>
-                        <li class="blog-pagination-item">
-                            <button class="blog-pagination-btn"></button>
-                        </li>
-                        <li class="blog-pagination-item">
-                            <button class="blog-pagination-btn"></button>
-                        </li>
-                    </ul>
-                    <button class="scrollbar-btn" type="button">
-                        <svg class="icon-arrow" width="24" height="24">
-                            <use href="./img/icons/sprite.svg#icon-arrow-right-m"></use>
-                        </svg>
-                    </button>              
-                </div>
-            </div>
-        </section>  
-        <section class="cta-section">
-            <div class="cta-wrapper icon-ttt container">
-                <div class="cta-info">
-                    <p class="subtitle cta">Bring Your Creativity Alive</p>
-                    <p class="cta-text">Explore our new exclusive digital design assets and graphic collections today!</p>
-                    <a href="./catalog.html" class="shopping-link button">Shop Now</a>
-                </div>
-                <div class="cta-picture">
-                    <img class="cta image"
-                    src="./img/cta/cta-image.webp" 
-                    alt="Website design for an AshGray company"
-                    width="274" height="151">
-                </div>
-            </div>
-        </section>     
+                  </a>
+                </article>
+              </li>
+              <li class="products-item">
+                <article class="product-card">
+                  <a href="#" class="product-link">
+                    <img
+                      class="image"
+                      src="./img/release/business-inst.webp"
+                      alt="Business Instagram landing page"
+                      width="160"
+                      height="160"
+                    />
+                    <div class="product-info">
+                      <h3 class="product-title">Business Instagram</h3>
+                      <p class="product-text">Canva</p>
+                      <div class="product-price-wrapper">
+                        <p class="product-price">$10.00</p>
+                        <span class="product-cart button">
+                          <svg class="icon-cart" width="24" height="24">
+                            <use href="./img/icons/sprite.svg#icon-cart"></use>
+                          </svg>
+                        </span>
+                      </div>
+                    </div>
+                  </a>
+                </article>
+              </li>
+              <li class="products-item">
+                <article class="product-card">
+                  <a href="#" class="product-link">
+                    <img
+                      class="image"
+                      src="./img/release/elegant.webp"
+                      alt="Elegant Instagram landing page"
+                      width="160"
+                      height="160"
+                    />
+                    <div class="product-info">
+                      <h3 class="product-title">Elegant</h3>
+                      <p class="product-text">Instagram Template</p>
+                      <div class="product-price-wrapper">
+                        <p class="product-price">$12.00</p>
+                        <span class="product-cart button">
+                          <svg class="icon-cart" width="24" height="24">
+                            <use href="./img/icons/sprite.svg#icon-cart"></use>
+                          </svg>
+                        </span>
+                      </div>
+                    </div>
+                  </a>
+                </article>
+              </li>
+              <li class="products-item">
+                <article class="product-card">
+                  <a href="./catalog-item.html" class="product-link">
+                    <img
+                      class="image"
+                      src="./img/release/vonix.webp"
+                      alt="Digital mockup of Vonix company profile template."
+                      width="160"
+                      height="160"
+                    />
+                    <div class="product-info">
+                      <h3 class="product-title">Vonix</h3>
+                      <p class="product-text">Presentation</p>
+                      <div class="product-price-wrapper">
+                        <p class="product-price">$20.00</p>
+                        <span class="product-cart button">
+                          <svg class="icon-cart" width="24" height="24">
+                            <use href="./img/icons/sprite.svg#icon-cart"></use>
+                          </svg>
+                        </span>
+                      </div>
+                    </div>
+                  </a>
+                </article>
+              </li>
+              <li class="products-item">
+                <article class="product-card">
+                  <a href="#" class="product-link">
+                    <img
+                      class="image"
+                      src="./img/release/avery.webp"
+                      alt="Modern Corporate monthly progress report presentation"
+                      width="160"
+                      height="160"
+                    />
+                    <div class="product-info">
+                      <h3 class="product-title">Avery</h3>
+                      <p class="product-text">Presentation</p>
+                      <div class="product-price-wrapper">
+                        <p class="product-price">$6.00</p>
+                        <span class="product-cart button">
+                          <svg class="icon-cart" width="24" height="24">
+                            <use href="./img/icons/sprite.svg#icon-cart"></use>
+                          </svg>
+                        </span>
+                      </div>
+                    </div>
+                  </a>
+                </article>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </section>
+      <section class="staff-picks-section">
+        <div class="container">
+          <h2 class="title staff-picks">STAFF PICKS</h2>
+          <p class="subtitle staff-picks">
+            Best Design Works<br />
+            Curated by Our Experts
+          </p>
+          <ol class="staff-picks-list">
+            <li class="staff-picks-item">
+              <article class="staff-picks-card">
+                <a href="#" class="staff-picks-link central">
+                  <img
+                    class="image"
+                    src="./img/staff-picks/glowieng.webp"
+                    alt="Website design for Glowieng company"
+                    width="620"
+                    height="300"
+                  />
+                  <h3 class="card-title">Glowieng</h3>
+                  <div class="staff-picks-wrapper">
+                    <div class="staff-picks-descr">
+                      <p class="text">Freelancer & Project Marketplace</p>
+                      <span class="dot"></span>
+                      <p class="text">Figma Template</p>
+                    </div>
+                    <div class="product-cart button">
+                      <svg class="icon-cart" width="24" height="24">
+                        <use href="./img/icons/sprite.svg#icon-cart"></use>
+                      </svg>
+                    </div>
+                  </div>
+                </a>
+              </article>
+            </li>
+            <li class="staff-picks-item">
+              <article class="staff-picks-card">
+                <a href="#" class="staff-picks-link">
+                  <img
+                    class="image"
+                    src="./img/staff-picks/petrolink.webp"
+                    alt="Website design for an oil and gas company PetroLink"
+                    width="250"
+                    height="244"
+                  />
+                  <h3 class="card-title">PetroLink</h3>
+                  <div class="staff-picks-descr">
+                    <p class="text">Business</p>
+                    <span class="dot"></span>
+                    <p class="text">Figma Template</p>
+                  </div>
+                </a>
+              </article>
+            </li>
+            <li class="staff-picks-item">
+              <article class="staff-picks-card">
+                <a href="#" class="staff-picks-link">
+                  <img
+                    class="image"
+                    src="./img/staff-picks/sparkr.webp"
+                    alt="Website design for Sparkr company"
+                    width="250"
+                    height="244"
+                  />
+                  <h3 class="card-title">Sparkr</h3>
+                  <div class="staff-picks-descr">
+                    <p class="text">Business Plan</p>
+                    <span class="dot"></span>
+                    <p class="text">Figma Template</p>
+                  </div>
+                </a>
+              </article>
+            </li>
+          </ol>
+        </div>
+      </section>
+      <section class="creators-section">
+        <div class="container">
+          <h2 class="title">CREATORS</h2>
+          <div class="creators-heading">
+            <p class="subtitle">Top Creators</p>
+            <a href="#" class="creators-explore-link">
+              Explore All Creators
+              <svg class="icon-arrow" width="24" height="24">
+                <use href="./img/icons/sprite.svg#icon-arrow-left"></use>
+              </svg>
+            </a>
+          </div>
+          <ul class="creators-list">
+            <li class="creators-item">
+              <article class="creators-card">
+                <img
+                  class="image"
+                  src="./img/top-creators/text.webp"
+                  alt="Text creator avatar"
+                  width="80"
+                  height="80"
+                />
+                <h3 class="card-heading">Text</h3>
+                <p class="card-text">120+ Works</p>
+                <button type="button" class="card-btn button">Text</button>
+              </article>
+            </li>
+            <li class="creators-item">
+              <article class="creators-card">
+                <img
+                  class="image"
+                  src="./img/top-creators/code-wizards.webp"
+                  alt="Code wizards creator avatar"
+                  width="80"
+                  height="80"
+                />
+                <h3 class="card-heading">Code Wizards</h3>
+                <p class="card-text">80+ Works</p>
+                <button type="button" class="card-btn button">Text</button>
+              </article>
+            </li>
+            <li class="creators-item">
+              <article class="creators-card">
+                <img
+                  class="image"
+                  src="./img/top-creators/pixel-perfect.webp"
+                  alt="Pixel perfect creator avatar"
+                  width="80"
+                  height="80"
+                />
+                <h3 class="card-heading">Pixel Perfect</h3>
+                <p class="card-text">200+ Works</p>
+                <button type="button" class="card-btn button">Text</button>
+              </article>
+            </li>
+            <li class="creators-item">
+              <article class="creators-card">
+                <img
+                  class="image"
+                  src="./img/top-creators/animate-canvas.webp"
+                  alt="Animate canvas creator avatar"
+                  width="80"
+                  height="80"
+                />
+                <h3 class="card-heading">Animate Canvas</h3>
+                <p class="card-text">60+ Works</p>
+                <button type="button" class="card-btn button">Text</button>
+              </article>
+            </li>
+            <li class="creators-item">
+              <article class="creators-card">
+                <img
+                  class="image"
+                  src="./img/top-creators/modernist-logos.webp"
+                  alt="Modernist logos creator avatar"
+                  width="80"
+                  height="80"
+                />
+                <h3 class="card-heading">Modernist Logos</h3>
+                <p class="card-text">150+ Works</p>
+                <button type="button" class="card-btn button">Text</button>
+              </article>
+            </li>
+          </ul>
+        </div>
+      </section>
+      <section class="faq-section">
+        <div class="faq-wrapper container">
+          <div class="faq-info">
+            <h2 class="title faq">F.A.Q</h2>
+            <p class="subtitle faq">
+              Answers to <br />
+              Your Questions
+            </p>
+            <button type="button" class="ask-us button">
+              Ask Us A Question
+            </button>
+          </div>
+          <div class="faq-popular">
+            <details class="faq-list">
+              <summary class="faq-item">Can I request a refund?</summary>
+              <p class="faq-item-text">
+                Accessing your purchased products is seamless and hassle-free on
+                our digital design marketplace. Simply log in to your account,
+                navigate to the 'My Purchases' section.
+              </p>
+            </details>
+            <details class="faq-list" open>
+              <summary class="faq-item">
+                How do I access my purchased products?
+              </summary>
+              <p class="faq-item-text">
+                Accessing your purchased products is seamless and hassle-free on
+                our digital design marketplace. Simply log in to your account,
+                navigate to the 'My Purchases' section.
+              </p>
+            </details>
+            <details class="faq-list">
+              <summary class="faq-item">
+                Are there any discounts for bulk purchases?
+              </summary>
+              <p class="faq-item-text">
+                Accessing your purchased products is seamless and hassle-free on
+                our digital design marketplace. Simply log in to your account,
+                navigate to the 'My Purchases' section.
+              </p>
+            </details>
+            <details class="faq-list">
+              <summary class="faq-item">
+                What payment methods do you accept here?
+              </summary>
+              <p class="faq-item-text">
+                Accessing your purchased products is seamless and hassle-free on
+                our digital design marketplace. Simply log in to your account,
+                navigate to the 'My Purchases' section.
+              </p>
+            </details>
+            <details class="faq-list">
+              <summary class="faq-item">
+                Can I sell my digital products on this marketplace?
+              </summary>
+              <p class="faq-item-text">
+                Accessing your purchased products is seamless and hassle-free on
+                our digital design marketplace. Simply log in to your account,
+                navigate to the 'My Purchases' section.
+              </p>
+            </details>
+          </div>
+        </div>
+      </section>
+      <section class="blog-section">
+        <div class="container">
+          <h2 class="title blog">BLOG</h2>
+          <p class="subtitle blog">
+            Latest Expert<br />
+            Design Tips & Insights
+          </p>
+          <ul class="blog-list">
+            <li class="blog-item">
+              <article class="blog-card">
+                <a href="./blog-details.html" class="blog-link">
+                  <img
+                    class="image"
+                    src="./img/blog/design-infographic.webp"
+                    alt="Dark mode design infographic"
+                    width="373"
+                    height="272"
+                  />
+                  <h3 class="card-title">
+                    Best Practice for Dark Mode UI Design: 5 Reasons for Its
+                    Increased Popularity
+                  </h3>
+                  <time class="card-date" datetime="2024-04-05"
+                    >5 APRIL 2024</time
+                  >
+                  <span class="label">TYPOGRAPHY</span>
+                </a>
+              </article>
+            </li>
+            <li class="blog-item">
+              <article class="blog-card">
+                <a href="./blog-details.html" class="blog-link">
+                  <img
+                    class="image"
+                    src="./img/blog/color-inspirations.webp"
+                    alt="Сolor palette inspiration guide"
+                    width="373"
+                    height="272"
+                  />
+                  <h3 class="card-title">
+                    Looking for Color Inspirations for Your Food Business?
+                  </h3>
+                  <time class="card-date" datetime="2024-03-16"
+                    >16 MARCH 2024</time
+                  >
+                  <span class="label">UI/UX DESIGN</span>
+                </a>
+              </article>
+            </li>
+            <li class="blog-item">
+              <article class="blog-card">
+                <a href="./blog-details.html" class="blog-link">
+                  <img
+                    class="image"
+                    src="./img/blog/presentation-templates.webp"
+                    alt="Dark mode design infographic"
+                    width="373"
+                    height="272"
+                  />
+                  <h3 class="card-title">
+                    6 Most Recommended Dental Presentation Templates
+                  </h3>
+                  <time class="card-date" datetime="2024-02-27"
+                    >27 FEBRUARY 2024</time
+                  >
+                  <span class="label">TYPOGRAPHY</span>
+                </a>
+              </article>
+            </li>
+          </ul>
+          <div class="blog-pagination">
+            <button class="blog-scrollbar-btn" type="button">
+              <svg class="icon-arrow blog" width="24" height="24">
+                <use href="./img/icons/sprite.svg#icon-arrow-left-small"></use>
+              </svg>
+            </button>
+            <ul class="blog-pagination-list">
+              <li class="blog-pagination-item">
+                <button class="blog-pagination-btn"></button>
+              </li>
+              <li class="blog-pagination-item">
+                <button class="blog-pagination-btn"></button>
+              </li>
+              <li class="blog-pagination-item">
+                <button class="blog-pagination-btn"></button>
+              </li>
+            </ul>
+            <button class="blog-scrollbar-btn next" type="button">
+              <svg class="icon-arrow blog" width="24" height="24">
+                <use href="./img/icons/sprite.svg#icon-arrow-left-small"></use>
+              </svg>
+            </button>
+          </div>
+        </div>
+      </section>
+      <section class="cta-section">
+        <div class="cta-wrapper icon-ttt container">
+          <div class="cta-info">
+            <p class="subtitle cta">Bring Your Creativity Alive</p>
+            <p class="cta-text">
+              Explore our new exclusive digital design assets and graphic
+              collections today!
+            </p>
+            <a href="./catalog.html" class="shopping-link button">Shop Now</a>
+          </div>
+          <div class="cta-picture">
+            <img
+              class="cta image"
+              src="./img/cta/cta-image.webp"
+              alt="Website design for an AshGray company"
+              width="274"
+              height="151"
+            />
+          </div>
+        </div>
+      </section>
     </main>
     <footer class="footer-section">
-        <div class="container">
-            <h2 hidden>Footer navigation</h2>
-
-            <div class="footer-head">
-                <div class="footer-logo-wrapper">
-                    <a href="#" class="logo-link">
-                        <img class="logo-image"
-                            src="./img/logo.webp" 
-                            alt="Pixmart logo" 
-                            width="300" height="58">
-                    </a>
-                    <p class="footer-text">Your premium digital assets solution with high quality and comprehensive range of products and services.</p>
-                </div>
-                <div class="footer-navigation-wrapper">
-                    <div class="footer-nav">
-                        <h3 class="subtitle">Company</h3>
-                        <nav class="footer-navigation">
-                            <ul class="footer-nav-list">
-                                <li class="footer-nav-item">
-                                    <a href="./index.html" class="footer-nav-link">Homepage v3</a>
-                                </li>
-                                <li class="footer-nav-item">
-                                    <a href="#" class="footer-nav-link">About Us</a>
-                                </li>
-                                <li class="footer-nav-item">
-                                    <a href="#" class="footer-nav-link">Creators</a>
-                                </li>
-                                <li class="footer-nav-item">
-                                    <a href="#" class="footer-nav-link">Blog Articles</a>
-                                </li>
-                            </ul>
-                        </nav>
-                    </div>
-                    <div class="footer-products">
-                        <h3 class="subtitle">Products</h3>
-                        <ul class="footer-products-list">
-                            <li class="footer-products-item">
-                                <a href="#" class="footer-products-link">Website</a>
-                            </li>
-                            <li class="footer-company-info-item">
-                                <a href="#" class="footer-products-link">Mobile App</a>
-                            </li>
-                            <li class="footer-company-info-item"> 
-                                <a href="#" class="footer-products-link">Social Media Feeds</a>
-                            </li>
-                            <li class="footer-company-info-item">
-                                <a href="#" class="footer-products-link">Presentation</a>
-                            </li>
-                            <li class="footer-company-info-item">
-                                <a href="#" class="footer-products-link">Product Mockups</a>
-                            </li>
-                            <li class="footer-company-info-item">
-                                <a href="#" class="footer-products-link">Illustrations</a>
-                            </li>
-                        </ul>
-                    </div>
-                    <div class="footer-account">
-                        <h3 class="subtitle">Account</h3>
-                        <ul class="footer-account-list">
-                            <li class="footer-accoun-item">
-                                <a href="#" class="footer-accoun-link">Your Cart</a>
-                            </li>
-                            <li class="footer-products-item">
-                                <a href="#" class="footer-accoun-link">Check Out</a>
-                            </li>
-                            <li class="footer-products-item">
-                                <a href="#" class="footer-accoun-link">Refund Policy</a>
-                            </li>
-                            <li class="footer-products-item">
-                                <a href="#" class="footer-accoun-link">Company Policy</a>
-                            </li>
-                            <li class="footer-products-item">
-                                <a href="#" class="footer-accoun-link">Send A Message</a>
-                            </li>
-                            <li class="footer-products-item">
-                                <a href="#" class="footer-accoun-link">Customer Support</a>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-            <div class="footer-subscribe-part">
-                <div class="footer-subscribe">
-                    <form class="subscribe-form" action="#" method="get">
-                        <label for="email" class="subtitle">Subscribe to Newsletter</label>
-                        <span class="subscribe-wrapper">
-                            <input class="subscribe-input"
-                            type="email"
-                            id="email" 
-                            name="email"
-                            autocomplete="on"
-                            placeholder="Enter your email address ..."
-                            required
-                            pattern="[a-z0-9._%+\-]+@[a-z0-9.\-]+\.[a-z]{2,}$"
-                            inputmode="email">
-                        <button class="footer-subscribe-btn button" type="submit">Subscribe</button>
-                        </span>
-                    </form>
-                </div>
-                <div class="footer-follow-us">
-                    <h3 class="subtitle">Follow Us</h3>
-                    <ul class="footer-follow-list">
-                        <li class="footer-follow-item">
-                            <a href="https://x.com/?lang=uk" class="footer-follow-link">
-                                <svg class="icon-twitter" width="32" height="32">
-                                    <use href="./img/icons/sprite.svg#icon-twitter"></use>
-                                </svg>
-                            </a>
-                        </li>
-                        <li class="footer-follow-item">
-                            <a href="https://www.instagram.com/" class="footer-follow-link">
-                                <svg class="icon-instagram" width="32" height="32">
-                                    <use href="./img/icons/sprite.svg#icon-instagram"></use>
-                                </svg>
-                            </a>
-                        </li>
-                        <li class="footer-follow-item">
-                            <a href="https://www.facebook.com/" class="footer-follow-link">
-                                <svg class="icon-facebook" width="32" height="32">
-                                    <use href="./img/icons/sprite.svg#icon-facebook"></use>
-                                </svg>
-                            </a>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-            <div class="footer-bottom">
-                <ul class="footer-bottom-list">
-                    <li class="footer-bottom-item">
-                        <a href="#" class="footer-bottom-link">Privacy Policy</a>
-                    </li>
-                    <li class="vertical-line"></li>
-                    <li class="footer-bottom-item">
-                        <a href="#" class="footer-bottom-link">Terms and Condition</a>
-                    </li>
-                    <li class="vertical-line"></li>
-                    <li class="footer-bottom-item">
-                        <a href="#" class="footer-bottom-link">Site Map</a>
-                    </li>
+      <div class="container">
+        <h2 hidden>Footer navigation</h2>
+        <div class="footer-head">
+          <div class="footer-logo-wrapper">
+            <a href="#" class="logo-link">
+              <img
+                class="logo-image"
+                src="./img/logo.webp"
+                alt="Pixmart logo"
+                width="300"
+                height="58"
+              />
+            </a>
+            <p class="footer-text">
+              Your premium digital assets solution with high quality and
+              comprehensive range of products and services.
+            </p>
+          </div>
+          <div class="footer-navigation-wrapper">
+            <div class="footer-nav">
+              <h3 class="subtitle">Company</h3>
+              <nav class="footer-navigation">
+                <ul class="footer-nav-list">
+                  <li class="footer-nav-item">
+                    <a href="./index.html" class="footer-link">Homepage v3</a>
+                  </li>
+                  <li class="footer-nav-item">
+                    <a href="#" class="footer-link">About Us</a>
+                  </li>
+                  <li class="footer-nav-item">
+                    <a href="#" class="footer-link">Creators</a>
+                  </li>
+                  <li class="footer-nav-item">
+                    <a href="#" class="footer-link">Blog Articles</a>
+                  </li>
                 </ul>
-                <p class="footer-copyright">Copyright © 2024 Pixmart. All rights reserved.</p>
+              </nav>
             </div>
+            <div class="footer-products">
+              <h3 class="subtitle">Products</h3>
+              <ul class="footer-products-list">
+                <li class="footer-products-item">
+                  <a href="#" class="footer-link">Website</a>
+                </li>
+                <li class="footer-company-info-item">
+                  <a href="#" class="footer-link">Mobile App</a>
+                </li>
+                <li class="footer-company-info-item">
+                  <a href="#" class="footer-link">Social Media Feeds</a>
+                </li>
+                <li class="footer-company-info-item">
+                  <a href="#" class="footer-link">Presentation</a>
+                </li>
+                <li class="footer-company-info-item">
+                  <a href="#" class="footer-link">Product Mockups</a>
+                </li>
+                <li class="footer-company-info-item">
+                  <a href="#" class="footer-link">Illustrations</a>
+                </li>
+              </ul>
+            </div>
+            <div class="footer-account">
+              <h3 class="subtitle">Account</h3>
+              <ul class="footer-account-list">
+                <li class="footer-accoun-item">
+                  <a href="#" class="footer-link">Your Cart</a>
+                </li>
+                <li class="footer-products-item">
+                  <a href="#" class="footer-link">Check Out</a>
+                </li>
+                <li class="footer-products-item">
+                  <a href="#" class="footer-link">Refund Policy</a>
+                </li>
+                <li class="footer-products-item">
+                  <a href="#" class="footer-link">Company Policy</a>
+                </li>
+                <li class="footer-products-item">
+                  <a href="#" class="footer-link">Send A Message</a>
+                </li>
+                <li class="footer-products-item">
+                  <a href="#" class="footer-link">Customer Support</a>
+                </li>
+              </ul>
+            </div>
+          </div>
         </div>
+        <div class="footer-subscribe-part">
+          <div class="footer-subscribe">
+            <form class="subscribe-form" action="#" method="get">
+              <label for="email" class="subtitle"
+                >Subscribe to Newsletter</label
+              >
+              <span class="subscribe-wrapper">
+                <input
+                  class="subscribe-input"
+                  type="email"
+                  id="email"
+                  name="email"
+                  autocomplete="on"
+                  placeholder="Enter your email address ..."
+                  required
+                  pattern="[a-z0-9._%+\-]+@[a-z0-9.\-]+\.[a-z]{2,}$"
+                  inputmode="email"
+                />
+                <button class="footer-subscribe-btn button" type="submit">
+                  Subscribe
+                </button>
+              </span>
+            </form>
+          </div>
+          <div class="footer-follow-us">
+            <h3 class="subtitle">Follow Us</h3>
+            <ul class="footer-follow-list">
+              <li class="footer-follow-item">
+                <a
+                  class="footer-follow-link"
+                  href="https://x.com/?lang=uk"
+                  target="_blank"
+                >
+                  <svg class="icon-socialmedia" width="32" height="32">
+                    <use href="./img/icons/sprite.svg#icon-twitter"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="footer-follow-item">
+                <a
+                  class="footer-follow-link"
+                  href="https://www.instagram.com/"
+                  target="_blank"
+                >
+                  <svg class="icon-socialmedia" width="32" height="32">
+                    <use href="./img/icons/sprite.svg#icon-instagram"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="footer-follow-item">
+                <a
+                  class="footer-follow-link"
+                  href="https://www.facebook.com/"
+                  target="_blank"
+                >
+                  <svg class="icon-socialmedia" width="32" height="32">
+                    <use href="./img/icons/sprite.svg#icon-facebook"></use>
+                  </svg>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="footer-bottom">
+          <ul class="footer-bottom-list">
+            <li class="footer-bottom-item">
+              <a href="#" class="footer-bottom-link">Privacy Policy</a>
+            </li>
+            <li class="vertical-line"></li>
+            <li class="footer-bottom-item">
+              <a href="#" class="footer-bottom-link">Terms and Condition</a>
+            </li>
+            <li class="vertical-line"></li>
+            <li class="footer-bottom-item">
+              <a href="#" class="footer-bottom-link">Site Map</a>
+            </li>
+          </ul>
+          <p class="footer-copyright">
+            Copyright © 2024 Pixmart. All rights reserved.
+          </p>
+        </div>
+      </div>
     </footer>
-</body>
+  </body>
 </html>
