@@ -210,7 +210,7 @@ input:-webkit-autofill:focus {
     display: inline-flex;
     width: 16px;
     height: 16px;
-    background-image: url(/img/icons/arrow-down-s.svg);
+    background-image: url(../img/icons/arrow-down-s.svg);
     -webkit-transition: 0.4s ease-in-out;
     -o-transition: 0.4s ease-in-out;
     transition: 0.4s ease-in-out;
@@ -2567,7 +2567,7 @@ input:-webkit-autofill:focus {
   right: 20px;
   width: 24px;
   height: 24px;
-  background-image: url(/img/icons/close.svg);
+  background-image: url(../img/icons/close.svg);
   -webkit-transition: var(--transition-effect);
   -o-transition: var(--transition-effect);
   transition: var(--transition-effect);
@@ -2577,7 +2577,7 @@ input:-webkit-autofill:focus {
 .filter-reset-btn:focus::after,
 .filter-reset-btn:after::after {
   scale: 1.02;
-  background-image: url(/img/icons/close-hover.svg);
+  background-image: url(../img/icons/close-hover.svg);
 }
 
 .select-wrapper {
@@ -2593,7 +2593,7 @@ input:-webkit-autofill:focus {
   bottom: 4px;
   height: 16px;
   width: 16px;
-  background-image: url(/img/icons/arrow-down-s.svg);
+  background-image: url(../img/icons/arrow-down-s.svg);
   pointer-events: none;
   -webkit-transition: var(--transition-effect);
   -o-transition: var(--transition-effect);
@@ -2999,7 +2999,7 @@ input:-webkit-autofill:focus {
   width: 64px;
   height: 64px;
   background-color: var(--white);
-  background-image: url(/img/icons/icon-detail.svg);
+  background-image: url(../img/icons/icon-detail.svg);
   background-repeat: no-repeat;
   background-position: center;
   border-radius: 10px;
@@ -3389,19 +3389,19 @@ input:-webkit-autofill:focus {
 }
 
 .description-wrapper.calendar::before {
-  background-image: url(/img/icons/calendar.svg);
+  background-image: url(../img/icons/calendar.svg);
 }
 
 .description-wrapper.folder::before {
-  background-image: url(/img/icons/folder.svg);
+  background-image: url(../img/icons/folder.svg);
 }
 
 .description-wrapper.dimensions::before {
-  background-image: url(/img/icons/dimensions.svg);
+  background-image: url(../img/icons/dimensions.svg);
 }
 
 .description-wrapper.planet::before {
-  background-image: url(/img/icons/planet.svg);
+  background-image: url(../img/icons/planet.svg);
 }
 
 .details-describe {
@@ -3808,7 +3808,7 @@ input:-webkit-autofill:focus {
 
 .checkbox:checked {
   background-color: var(--blue);
-  background-image: url(/img/icons/check.svg);
+  background-image: url(../img/icons/check.svg);
   background-position: center;
 }
 
