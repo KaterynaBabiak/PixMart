@@ -31,6 +31,7 @@
 
 html {
   scroll-behavior: smooth;
+  overflow-x: auto;
 }
 
 body {
@@ -503,7 +504,7 @@ input:-webkit-autofill:focus {
 }
 
 .hero-describe-part {
-  width: 644px;
+  min-width: 644px;
   margin-top: 124px;
   margin-bottom: 124px;
 }
@@ -621,7 +622,7 @@ input:-webkit-autofill:focus {
   display: -ms-grid;
   display: grid;
   gap: 20px;
-  width: 556px;
+  min-width: 556px;
 }
 
 .big-img,
@@ -781,7 +782,7 @@ input:-webkit-autofill:focus {
   grid-template-columns: repeat(auto-fit, 413px);
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
-          justify-content: space-between;
+          justify-content: center;
   gap: 20px;
   counter-reset: categories-counter;
 }
@@ -1028,6 +1029,7 @@ input:-webkit-autofill:focus {
   padding: 40px;
   max-width: 432px;
   height: auto;
+  z-index: 2;
 
   .text {
     opacity: 70%;
@@ -1061,6 +1063,54 @@ input:-webkit-autofill:focus {
   background-color: var(--dark-blue);
 }
 
+
+.gallery-wrapper {
+  width: fit-content;
+  background-color: var(--light-blue);
+}
+
+.promo-gallery {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(9, 1fr);
+  gap: 12px;
+
+  position: absolute;
+  top: -58px;
+  right: -100px;
+  z-index: 1;
+
+  .image {
+    border-radius: 20px;
+    border: 5px solid var(--white);
+    box-shadow: 0px 4px 30px 0px #1D395F0D;
+  }
+
+  .celebrating {
+    grid-row: 1 / span 3;
+  }
+  
+  .promo-homepage {
+    grid-row: 4 / span 3;
+  }
+  
+  .promo-teachers {
+    grid-row: 7 / span 3;
+  }
+  
+  .promo-teachers-two {
+    grid-row: 2 / span 3;
+  }
+  
+  .promo {
+    grid-row: 5 /span 3;
+  }
+}
+
+
+
+
+/*
 .promo-galery {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1086,10 +1136,12 @@ input:-webkit-autofill:focus {
 
   .image {
     border-radius: 20px;
+    border: 5px solid var(--white);
     -webkit-box-shadow: 0px 4px 30px 0px #1d395f0d;
             box-shadow: 0px 4px 30px 0px #1d395f0d;
   }
 }
+*/
 
 .promo-invitation {
   width: 305px;
@@ -2631,6 +2683,10 @@ input:-webkit-autofill:focus {
   margin-bottom: 64px;
 }
 
+.catalog-item {
+  max-width: 302px;
+}
+
 .catalog-link .image {
   height: 260px;
   border-radius: 20px;
@@ -2950,6 +3006,7 @@ input:-webkit-autofill:focus {
 }
 
 .article-illustration {
+  min-width: 710px;
   margin-bottom: 12px;
 }
 
@@ -3404,7 +3461,8 @@ input:-webkit-autofill:focus {
 .related-products-list {
   display: -ms-grid;
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(302px, 1fr));
+  grid-template-columns: repeat(auto-fit, 302px);
+  justify-content: center;
   gap: 24px;
 }
 
@@ -5005,4 +5063,44 @@ input:-webkit-autofill:focus {
   position: absolute;
   top: 40px;
   right: 40px;
+}
+
+
+
+
+
+.gallery-wrapper {
+  width: fit-content;
+  background-color: var(--light-blue);
+}
+
+.promo-gallery {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(9, 1fr);
+  gap: 12px;
+
+  position: absolute;
+  top: -58px;
+  right: -100px;
+}
+
+.celebrating {
+  grid-row: 1 / span 3;
+}
+
+.promo-homepage {
+  grid-row: 4 / span 3;
+}
+
+.promo-teachers {
+  grid-row: 7 / span 3;
+}
+
+.promo-teachers-two {
+  grid-row: 2 / span 3;
+}
+
+.promo {
+  grid-row: 5 /span 3;
 }
