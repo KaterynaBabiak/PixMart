@@ -1969,6 +1969,7 @@ input:-webkit-autofill:focus {
 
   .info {
     max-width: 387px;
+    z-index: 1;
   }
 
   .subtitle {
@@ -1986,6 +1987,7 @@ input:-webkit-autofill:focus {
     margin: auto 0 0;
     isolation: isolate;
   }
+
 }
 
 /*------------------FOOTER SECTION------------------*/
