@@ -2177,6 +2177,7 @@ input:-webkit-autofill:focus {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  margin-bottom: 96px;
 }
 
 .footer-follow-us {
@@ -2966,6 +2967,7 @@ input:-webkit-autofill:focus {
 }
 
 .catalog-footer .logo-image {
+  height: 58px;
   fill: var(--blue);
   margin-bottom: 28px;
 }
@@ -2973,11 +2975,7 @@ input:-webkit-autofill:focus {
 .catalog-footer .footer-text,
 .catalog-footer .subtitle {
   color: var(--black);
-}
-
-.catalog-footer .footer-text {
   overflow-wrap: break-word;
-  margin-bottom: 160px;
 }
 
 .catalog-footer .footer-navigation-wrapper {
