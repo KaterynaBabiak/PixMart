@@ -55,7 +55,7 @@
         <div class="navigation-wrapper">
           <a href="./index.html" class="logo">
             <img
-              src="./img/logo-header.webp"
+              src="./img/icons/logo-blue.svg"
               alt="PixMart logotype"
               width="80"
               height="28"
@@ -66,7 +66,7 @@
               <li class="item">
                 <a href="./about.html" class="link" title="about">About</a>
               </li>
-              <li class="item products">
+              <li class="item products active-page">
                 <a href="./catalog.html" class="link" title="products">
                   Products
                 </a>
@@ -90,10 +90,10 @@
         <ul class="action-list">
           <li class="action-item">
             <form action="#" method="get" class="search-form header">
-              <label for="search" class="visually-hidden"></label>
+              <label for="search" class="visually-hidden">search</label>
               <input
                 class="search-input"
-                type="text"
+                type="search"
                 id="search"
                 name="search"
                 autocomplete="off"
@@ -129,6 +129,7 @@
       </section>
       <section class="catalog">
         <div class="catalog-main container">
+          <h2 class="visually-hidden">catalog</h2>
           <div class="catalog-wrapper">
             <div class="catalog-filter">
               <div class="filter-wrapper">
@@ -452,19 +453,29 @@
               </button>
               <ol class="catalog-pagination-list">
                 <li class="catalog-pagination-item">
-                  <button class="catalog-pagination-btn button">01</button>
+                  <button class="catalog-pagination-btn button" type="button">
+                    01
+                  </button>
                 </li>
                 <li class="catalog-pagination-item">
-                  <button class="catalog-pagination-btn button">02</button>
+                  <button class="catalog-pagination-btn button" type="button">
+                    02
+                  </button>
                 </li>
                 <li class="catalog-pagination-item">
-                  <button class="catalog-pagination-btn button">03</button>
+                  <button class="catalog-pagination-btn button" type="button">
+                    03
+                  </button>
                 </li>
                 <li class="catalog-pagination-item">
-                  <button class="catalog-pagination-btn button">...</button>
+                  <button class="catalog-pagination-btn button" type="button">
+                    ...
+                  </button>
                 </li>
                 <li class="catalog-pagination-item">
-                  <button class="catalog-pagination-btn button">10</button>
+                  <button class="catalog-pagination-btn button" type="button">
+                    10
+                  </button>
                 </li>
               </ol>
               <button
@@ -735,7 +746,9 @@
                   <div class="progress"></div>
                 </div>
                 <div class="range-input-wrap">
-                  <label for="min-range" class="visually-hidden"></label>
+                  <label for="min-range" class="visually-hidden"
+                    >min range</label
+                  >
                   <input
                     class="range-input min"
                     type="range"
@@ -744,7 +757,9 @@
                     max="80"
                     value="5"
                   />
-                  <label for="max-range" class="visually-hidden"></label>
+                  <label for="max-range" class="visually-hidden"
+                    >max range</label
+                  >
                   <input
                     class="range-input max"
                     type="range"
@@ -782,10 +797,10 @@
         <h2 hidden>Footer navigation</h2>
         <div class="footer-head catalog">
           <div class="footer-logo-wrapper">
-            <a href="#" class="logo-link">
+            <a href="./index.html" class="logo-link">
               <img
                 class="logo-image"
-                src="./img/logo-blue.webp"
+                src="./img/icons/logo-blue.svg"
                 alt="Pixmart logo"
                 width="300"
                 height="58"
@@ -927,25 +942,25 @@
             </div>
           </div>
         </div>
-        <div class="footer-bottom-wrapper">
-          <div class="footer-bottom catalog-page container">
-            <ul class="footer-bottom-list">
-              <li class="footer-bottom-item">
-                <a href="#" class="footer-bottom-link">Privacy Policy</a>
-              </li>
-              <li class="vertical-line"></li>
-              <li class="footer-bottom-item">
-                <a href="#" class="footer-bottom-link">Terms and Condition</a>
-              </li>
-              <li class="vertical-line"></li>
-              <li class="footer-bottom-item">
-                <a href="#" class="footer-bottom-link">Site Map</a>
-              </li>
-            </ul>
-            <p class="footer-copyright">
-              Copyright © 2024 Pixmart. All rights reserved.
-            </p>
-          </div>
+      </div>
+      <div class="footer-bottom-wrapper">
+        <div class="footer-bottom catalog-page container">
+          <ul class="footer-bottom-list">
+            <li class="footer-bottom-item">
+              <a href="#" class="footer-bottom-link">Privacy Policy</a>
+            </li>
+            <li class="vertical-line"></li>
+            <li class="footer-bottom-item">
+              <a href="#" class="footer-bottom-link">Terms and Condition</a>
+            </li>
+            <li class="vertical-line"></li>
+            <li class="footer-bottom-item">
+              <a href="#" class="footer-bottom-link">Site Map</a>
+            </li>
+          </ul>
+          <p class="footer-copyright">
+            Copyright © 2024 Pixmart. All rights reserved.
+          </p>
         </div>
       </div>
     </footer>
