@@ -1,372 +1,452 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="icon" type="image/x-icon" href="/img/favicon.webp">
-    <title>Pixmart</title>
-    <link rel="stylesheet" href="./css/modern-normalize.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link rel="preconnect" href="https://fonts.googleapis.com/css2?family=Libre+Franklin:ital,wght@0,100..900;1,100..900&family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap" rel="stylesheet">
-    <link rel="stylesheet" type="text/css" href="./css/styles.css">
-</head>
-<body>
-  <header class="header">
-    <div class="header-section container">
+  <head>
+    <title></title>
+    <meta name="description" content="" />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="icon"
+      type="image/png"
+      href="./favicon_io/android-chrome-512x512.png"
+      sizes="512x512"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      href="./favicon_io/android-chrome-192x192.png"
+      sizes="192x192"
+    />
+    <link
+      rel="apple-touch-icon"
+      type="image/png"
+      href="./favicon_io/apple-touch-icon.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      href="./favicon_io/favicon-32x32.png"
+      sizes="32x32"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      href="./favicon_io/favicon-16x16.png"
+      sizes="16x16"
+    />
+    <link rel="icon" type="image/png" href="./favicon_io/favicon.ico" />
+    <link rel="stylesheet" href="./css/modern-normalize.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Libre+Franklin:wght@100..900&family=Plus+Jakarta+Sans:wght@700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" type="text/css" href="./css/styles.css" />
+  </head>
+  <body>
+    <header class="header creators-page">
+      <div class="header-section container">
         <div class="navigation-wrapper">
-            <a href="./index.html" class="logo">
-                Pixmart.
-            </a>
-            <nav class="header-navigation">
-                <ul class="list">
-                    <li class="item">
-                        <a href="./about.html" class="link" title="about">About</a>
-                    </li>
-                    <li class="item products">
-                        <a href="./catalog.html" class="link" title="products">
-                            Products
-                        </a>
-                    </li>
-                    <li class="item creator active-page">
-                        <a href="./creators.html" class="link" title="creators">
-                            Creators   
-                        </a>
-                    </li>
-                    <li class="item">
-                        <a href="./blog.html" class="link" title="blog">Blog</a>
-                    </li>
-                    <li class="item">
-                        <a href="./contact.html" class="link" title="contact">Contact</a>
-                    </li>
-                </ul>
-            </nav>
+          <a href="./index.html" class="logo">
+            <img
+              src="./img/icons/logo-blue.svg"
+              alt="PixMart logotype"
+              width="80"
+              height="28"
+            />
+          </a>
+          <nav class="header-navigation">
+            <ul class="list">
+              <li class="item">
+                <a href="./about.html" class="link" title="about">About</a>
+              </li>
+              <li class="item products">
+                <a href="./catalog.html" class="link" title="products">
+                  Products
+                </a>
+              </li>
+              <li class="item creator active-page">
+                <a href="./creators.html" class="link" title="creators">
+                  Creators
+                </a>
+              </li>
+              <li class="item">
+                <a href="./blog.html" class="link" title="blog">Blog</a>
+              </li>
+              <li class="item">
+                <a href="./contact.html" class="link" title="contact"
+                  >Contact</a
+                >
+              </li>
+            </ul>
+          </nav>
         </div>
         <ul class="action-list">
-            <li class="action-item">
-                <button class="action-button user-btn" type="button">
-                    <svg class="user" width="24" height="24">
-                        <use href="./img/icons/sprite.svg#icon-user"></use>
-                    </svg>
-                </button>
-            </li>
-            <li class="action-item">
-                <button class="action-button cart-btn" type="button">
-                    <svg class="cart" width="24" height="24">
-                        <use href="./img/icons/sprite.svg#icon-cart"></use>
-                    </svg>
-                </button>
-            </li>
-        </ul>            
-    </div>
-</header>
+          <li class="action-item">
+            <button class="action-button user-btn" type="button">
+              <svg class="user" width="24" height="24">
+                <use href="./img/icons/sprite.svg#icon-user"></use>
+              </svg>
+            </button>
+          </li>
+          <li class="action-item">
+            <button class="action-button cart-btn" type="button">
+              <svg class="cart" width="24" height="24">
+                <use href="./img/icons/sprite.svg#icon-cart"></use>
+              </svg>
+            </button>
+          </li>
+        </ul>
+      </div>
+    </header>
     <main>
-        <section class="creators-hero-section">
-            <div class="creators container">
-                <div class="creator-profile">
-                    <div class="creator-info">
-                        <h1 class="subtitle">
-                            Visual Vibe Arts
-                          </h1>
-                          <a class="creator-link" href="https://visualvibe.co">https://visualvibe.co</a>
-                          <div class="creator-profile-info">
-                            <p class="text">
-                                <span class="accent">128</span>
-                                Works
-                            </p>
-                            <span class="dot"></span>
-                            <p class="text">
-                                <span class="accent">2345</span>
-                                Followers
-                            </p>
-                          </div>
-                    </div>
-                    <img class="image"
-                    src="./img/top-creators/pixel-perfect.webp" 
-                    alt="Avatar ofVisual Vibe Arts creator"
-                    width="162" height="162"
-                    >
-                </div>
-                <div class="follow-creator">
-                    <ul class="follow-list">
-                        <li class="follow-item">
-                            <a class="follow-link"
-                            href="https://x.com/?lang=uk"
-                            target="_blank">
-                                <svg class="icon-socialmedia" width="24" height="24">
-                                    <use href="./img/icons/sprite.svg#icon-twitter"></use>
-                                </svg>
-                            </a>
-                        </li>
-                        <li class="follow-item">
-                            <a class="follow-link"
-                            href="https://www.instagram.com/"
-                            target="_blank">
-                                <svg class="icon-socialmedia" width="24" height="24">
-                                    <use href="./img/icons/sprite.svg#icon-instagram"></use>
-                                </svg>
-                            </a>
-                        </li>
-                        <li class="follow-item">
-                            <a class="follow-link"
-                            href="https://www.facebook.com/" 
-                            target="_blank">
-                                <svg class="icon-socialmedia" width="24" height="24">
-                                    <use href="./img/icons/sprite.svg#icon-facebook"></use>
-                                </svg>
-                            </a>
-                        </li>
-                    </ul>
-                    <div class="follow-button-list">
-                        <button class="follow-btn connect button"  type="button">Follow Creator</button>
-                        <button class="follow-btn send-message  button" type="button">Send Message</button>
-                    </div>
-                </div>
+      <section class="creators-hero-section">
+        <div class="creators container">
+          <div class="creator-profile">
+            <div class="creator-info">
+              <h1 class="subtitle">Visual Vibe Arts</h1>
+              <a class="creator-link" href="https://visualvibe.co"
+                >https://visualvibe.co</a
+              >
+              <div class="creator-profile-info">
+                <p class="text">
+                  <span class="accent">128</span>
+                  Works
+                </p>
+                <p class="text">
+                  <span class="accent">2345</span>
+                  Followers
+                </p>
+              </div>
             </div>
-          </section>
-        <section class="catalog">
-            <div class="container">
-                <div class="creators-search">
-                    <h2 class="card-title">Products by Creator</h2>
-                    <form action="#" method="get" class="search-form creators-page">
-                        <div class="search-wrapper">
-                            <label for="search" class="visually-hidden"></label>
-                            <input class="search-input "
-                            type="text"
-                            id="search"
-                            name="search"
-                            autocomplete="off"
-                            placeholder="Search assets ...">
-                            <button class="icon-search-btn" type="submit">
-                                <svg class="icon-search" width="24" height="24">
-                                  <use href="./img/icons/sprite.svg#icon-search"></use>
-                                </svg>
-                            </button>
-                        </div>
-                        <div class="select-wrapper">
-                            <label for="select-input" class="text">Category</label>
-                            <select class="select-box select-dropdown creators-page"
-                            name="select-input" 
-                            id="select-input">
-                                <option value="best-seller">UI Template</option>
-                            </select>
-                        </div>
-                    </form>
-                </div>
-                <ul class="catalog-list creators-page">
-                    <li class="catalog-item">
-                        <article class="catalog-card">
-                            <a href="#" class="catalog-link">
-                                <img class="image"
-                                src="./img/catalog/ezmart.webp" 
-                                alt="Figma template for an online store EzMart"
-                                width="302" height="260"/>
-                                <h3 class="product-title">EzMart</h3>
-                                <p class="product-text">Figma Template</p>
-                                <div class="product-price-wrapper">
-                                    <p class="product-price">$11.00</p>
-                                    <span class="product-cart button">
-                                        <svg class="icon-cart"  width="24" height="24">
-                                            <use href="./img/icons/sprite.svg#icon-cart"></use>
-                                        </svg>
-                                    </span>
-                                </div>
-                            </a>
-                        </article>
-                    </li>
-                    <li class="catalog-item">
-                        <article class="catalog-card">
-                            <a href="#" class="catalog-link">
-                                <img class="image"
-                                src="./img/catalog/school-hub.webp" 
-                                alt="Figma template for schoolhub management admin"
-                                width="302" height="260"/>
-                                <h3 class="product-title">SchoolHub</h3>
-                                <p class="product-text">Figma Template</p>
-                                <div class="product-price-wrapper">
-                                    <p class="product-price">$6.00</p>
-                                    <span class="product-cart button">
-                                        <svg class="icon-cart"  width="24" height="24">
-                                            <use href="./img/icons/sprite.svg#icon-cart"></use>
-                                        </svg>
-                                    </span>
-                                </div>
-                            </a>
-                        </article>
-                    </li>
-                    <li class="catalog-item">
-                        <article class="catalog-card">
-                            <a href="#" class="catalog-link">
-                                <img class="image"
-                                src="./img/catalog/kidztar.webp" 
-                                alt="Figma template for Kidztar"
-                                width="302" height="260"/>
-                                <h3 class="product-title">Kidztar</h3>
-                                <p class="product-text">Figma Template</p>
-                                <div class="product-price-wrapper">
-                                    <p class="product-price">$20.00</p>
-                                    <span class="product-cart button">
-                                         <svg class="icon-cart"  width="24" height="24">
-                                            <use href="./img/icons/sprite.svg#icon-cart"></use>
-                                        </svg>
-                                    </span>
-                                </div>
-                            </a>
-                        </article>
-                    </li>
-                    <li class="catalog-item">
-                        <article class="catalog-card">
-                            <a href="#" class="catalog-link">
-                                <img class="image"
-                                src="./img/catalog/playcut.webp" 
-                                alt="Figma template for PlayCut"
-                                width="302" height="260"/>
-                                <h3 class="product-title">PlayCut</h3>
-                                <p class="product-text">Figma Template</p>
-                                <div class="product-price-wrapper">
-                                    <p class="product-price">$20.00</p>
-                                    <span class="product-cart button">
-                                        <svg class="icon-cart"  width="24" height="24">
-                                            <use href="./img/icons/sprite.svg#icon-cart"></use>
-                                        </svg>
-                                    </span>
-                                </div>
-                            </a>
-                        </article>
-                    </li>
-                    <li class="catalog-item">
-                        <article class="catalog-card">
-                            <a href="#" class="catalog-link">
-                                <img class="image"
-                                src="./img/catalog/journeey.webp" 
-                                alt="Figma template for Journeey"
-                                width="302" height="260"/>
-                                <h3 class="product-title">Journeey</h3>
-                                <p class="product-text">Figma Template</p>
-                                <div class="product-price-wrapper">
-                                    <p class="product-price">$5.00</p>
-                                    <span class="product-cart button">
-                                        <svg class="icon-cart"  width="24" height="24">
-                                            <use href="./img/icons/sprite.svg#icon-cart"></use>
-                                         </svg>
-                                    </span>
-                                </div>
-                            </a>
-                        </article>
-                    </li>
-                    <li class="catalog-item">
-                        <article class="catalog-card">
-                            <a href="#" class="catalog-link">
-                                <img class="image"
-                                src="./img/catalog/foodish.webp" 
-                                alt="Figma template for Foodish"
-                                width="302" height="260"/>
-                                <h3 class="product-title">Foodish</h3>
-                                <p class="product-text">Figma Template</p>
-                                <div class="product-price-wrapper">
-                                    <p class="product-price">$6.00</p>
-                                    <span class="product-cart button">
-                                        <svg class="icon-cart"  width="24" height="24">
-                                            <use href="./img/icons/sprite.svg#icon-cart"></use>
-                                        </svg>
-                                    </span>
-                                </div>
-                            </a>
-                        </article>
-                    </li>
-                    <li class="catalog-item">
-                        <article class="catalog-card">
-                            <a href="#" class="catalog-link">
-                                <img class="image"
-                                src="./img/catalog/medi-care.webp" 
-                                alt="Figma template for MediCare"
-                                width="302" height="260"/>
-                                <h3 class="product-title">MediCare</h3>
-                                <p class="product-text">Figma Template</p>
-                                <div class="product-price-wrapper">
-                                    <p class="product-price">$18.00</p>
-                                    <span class="product-cart button">
-                                        <svg class="icon-cart"  width="24" height="24">
-                                            <use href="./img/icons/sprite.svg#icon-cart"></use>
-                                        </svg>
-                                    </span>
-                                </div>
-                            </a>
-                        </article>
-                    </li>
-                    <li class="catalog-item">
-                        <article class="catalog-card">
-                            <a href="#" class="catalog-link">
-                                <img class="image"
-                                src="./img/catalog/up-news.webp" 
-                                alt="Figma template for UpNews"
-                                width="302" height="260"/>
-                                <h3 class="product-title">UpNews</h3>
-                                <p class="product-text">Figma Template</p>
-                                <div class="product-price-wrapper">
-                                    <p class="product-price">$12.00</p>
-                                    <span class="product-cart button">
-                                        <svg class="icon-cart"  width="24" height="24">
-                                            <use href="./img/icons/sprite.svg#icon-cart"></use>
-                                        </svg>
-                                    </span>
-                                </div>
-                            </a>
-                        </article>
-                    </li>
-                </ul>
-                <div class="catalog-pagination">
-                    <button type="button" class="catalog-pagination-arrow button">
-                      <svg class="icon-arrow-small" width="16" height="16">
-                        <use href="./img/icons/sprite.svg#icon-arrow-left-small"></use>
+            <img
+              class="image"
+              src="./img/top-creators/pixel-perfect.webp"
+              alt="Avatar ofVisual Vibe Arts creator"
+              width="162"
+              height="162"
+            />
+          </div>
+          <div class="follow-creator">
+            <ul class="follow-list">
+              <li class="follow-item">
+                <a
+                  class="follow-link"
+                  href="https://x.com/?lang=uk"
+                  target="_blank"
+                >
+                  <svg class="icon-socialmedia" width="24" height="24">
+                    <use href="./img/icons/sprite.svg#icon-twitter"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="follow-item">
+                <a
+                  class="follow-link"
+                  href="https://www.facebook.com/"
+                  target="_blank"
+                >
+                  <svg class="icon-socialmedia" width="24" height="24">
+                    <use href="./img/icons/sprite.svg#icon-facebook"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="follow-item">
+                <a
+                  class="follow-link"
+                  href="https://www.instagram.com/"
+                  target="_blank"
+                >
+                  <svg class="icon-socialmedia" width="24" height="24">
+                    <use href="./img/icons/sprite.svg#icon-instagram"></use>
+                  </svg>
+                </a>
+              </li>
+            </ul>
+            <div class="follow-button-list">
+              <button class="follow-btn connect button" type="button">
+                Follow Creator
+              </button>
+              <button class="follow-btn send-message button" type="button">
+                Send Message
+              </button>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="catalog">
+        <div class="container">
+          <div class="creators-search">
+            <h2 class="card-title">Products by Creator</h2>
+            <form action="#" method="get" class="search-form creators-page">
+              <div class="search-wrapper">
+                <label for="search" class="visually-hidden"></label>
+                <input
+                  class="search-input"
+                  type="text"
+                  id="search"
+                  name="search"
+                  autocomplete="off"
+                  placeholder="Search assets ..."
+                />
+                <button class="icon-search-btn" type="submit">
+                  <svg class="icon-search" width="24" height="24">
+                    <use href="./img/icons/sprite.svg#icon-search"></use>
+                  </svg>
+                </button>
+              </div>
+              <div class="select-wrapper">
+                <label for="select-input" class="text">Category</label>
+                <select
+                  class="select-box select-dropdown creators-page"
+                  name="select-input"
+                  id="select-input"
+                >
+                  <option value="best-seller">UI Template</option>
+                </select>
+              </div>
+            </form>
+          </div>
+          <ul class="catalog-list creators-page">
+            <li class="catalog-item">
+              <article class="catalog-card">
+                <a href="#" class="catalog-link">
+                  <img
+                    class="image"
+                    src="./img/catalog/ezmart.webp"
+                    alt="Figma template for an online store EzMart"
+                    width="302"
+                    height="260"
+                  />
+                  <h3 class="product-title">EzMart</h3>
+                  <p class="product-text">Figma Template</p>
+                  <div class="product-price-wrapper">
+                    <p class="product-price">$11.00</p>
+                    <span class="product-cart button">
+                      <svg class="icon-cart" width="24" height="24">
+                        <use href="./img/icons/sprite.svg#icon-cart"></use>
                       </svg>
-                    </button>
-                    <ol class="catalog-pagination-list">
-                      <li class="catalog-pagination-item">
-                        <button class="catalog-pagination-btn button">01</button>
-                      </li>
-                      <li class="catalog-pagination-item">
-                        <button class="catalog-pagination-btn button">02</button>
-                      </li>
-                      <li class="catalog-pagination-item">
-                        <button class="catalog-pagination-btn button">03</button>
-                      </li>
-                      <li class="catalog-pagination-item">
-                        <button class="catalog-pagination-btn button">...</button>
-                      </li>
-                      <li class="catalog-pagination-item">
-                        <button class="catalog-pagination-btn button">10</button>
-                      </li>
-                    </ol>
-                    <button type="button" class="catalog-pagination-arrow button">
-                      <svg class="icon-arrow-small" width="16" height="16">
-                        <use href="./img/icons/sprite.svg#icon-arrow-right-small"></use>
+                    </span>
+                  </div>
+                </a>
+              </article>
+            </li>
+            <li class="catalog-item">
+              <article class="catalog-card">
+                <a href="#" class="catalog-link">
+                  <img
+                    class="image"
+                    src="./img/catalog/school-hub.webp"
+                    alt="Figma template for schoolhub management admin"
+                    width="302"
+                    height="260"
+                  />
+                  <h3 class="product-title">SchoolHub</h3>
+                  <p class="product-text">Figma Template</p>
+                  <div class="product-price-wrapper">
+                    <p class="product-price">$6.00</p>
+                    <span class="product-cart button">
+                      <svg class="icon-cart" width="24" height="24">
+                        <use href="./img/icons/sprite.svg#icon-cart"></use>
                       </svg>
-                    </button>
-                </div>  
-            </div>
-        </section>
-        <section class="product-section">
-            <div class="container">
-                <div class="product-wrapper">
-                    <h2 class="title">PRODUCT</h2>
-                    <p class="subtitle">
-                       Elevate Your Project <br> with Premium Digital Assets
-                    </p>
-                    <button class="shop-now-btn button" type="button">Shop Now</button>
-                </div>
-            </div>
-        </section>
+                    </span>
+                  </div>
+                </a>
+              </article>
+            </li>
+            <li class="catalog-item">
+              <article class="catalog-card">
+                <a href="#" class="catalog-link">
+                  <img
+                    class="image"
+                    src="./img/catalog/kidztar.webp"
+                    alt="Figma template for Kidztar"
+                    width="302"
+                    height="260"
+                  />
+                  <h3 class="product-title">Kidztar</h3>
+                  <p class="product-text">Figma Template</p>
+                  <div class="product-price-wrapper">
+                    <p class="product-price">$20.00</p>
+                    <span class="product-cart button">
+                      <svg class="icon-cart" width="24" height="24">
+                        <use href="./img/icons/sprite.svg#icon-cart"></use>
+                      </svg>
+                    </span>
+                  </div>
+                </a>
+              </article>
+            </li>
+            <li class="catalog-item">
+              <article class="catalog-card">
+                <a href="#" class="catalog-link">
+                  <img
+                    class="image"
+                    src="./img/catalog/playcut.webp"
+                    alt="Figma template for PlayCut"
+                    width="302"
+                    height="260"
+                  />
+                  <h3 class="product-title">PlayCut</h3>
+                  <p class="product-text">Figma Template</p>
+                  <div class="product-price-wrapper">
+                    <p class="product-price">$20.00</p>
+                    <span class="product-cart button">
+                      <svg class="icon-cart" width="24" height="24">
+                        <use href="./img/icons/sprite.svg#icon-cart"></use>
+                      </svg>
+                    </span>
+                  </div>
+                </a>
+              </article>
+            </li>
+            <li class="catalog-item">
+              <article class="catalog-card">
+                <a href="#" class="catalog-link">
+                  <img
+                    class="image"
+                    src="./img/catalog/journeey.webp"
+                    alt="Figma template for Journeey"
+                    width="302"
+                    height="260"
+                  />
+                  <h3 class="product-title">Journeey</h3>
+                  <p class="product-text">Figma Template</p>
+                  <div class="product-price-wrapper">
+                    <p class="product-price">$5.00</p>
+                    <span class="product-cart button">
+                      <svg class="icon-cart" width="24" height="24">
+                        <use href="./img/icons/sprite.svg#icon-cart"></use>
+                      </svg>
+                    </span>
+                  </div>
+                </a>
+              </article>
+            </li>
+            <li class="catalog-item">
+              <article class="catalog-card">
+                <a href="#" class="catalog-link">
+                  <img
+                    class="image"
+                    src="./img/catalog/foodish.webp"
+                    alt="Figma template for Foodish"
+                    width="302"
+                    height="260"
+                  />
+                  <h3 class="product-title">Foodish</h3>
+                  <p class="product-text">Figma Template</p>
+                  <div class="product-price-wrapper">
+                    <p class="product-price">$6.00</p>
+                    <span class="product-cart button">
+                      <svg class="icon-cart" width="24" height="24">
+                        <use href="./img/icons/sprite.svg#icon-cart"></use>
+                      </svg>
+                    </span>
+                  </div>
+                </a>
+              </article>
+            </li>
+            <li class="catalog-item">
+              <article class="catalog-card">
+                <a href="#" class="catalog-link">
+                  <img
+                    class="image"
+                    src="./img/catalog/medi-care.webp"
+                    alt="Figma template for MediCare"
+                    width="302"
+                    height="260"
+                  />
+                  <h3 class="product-title">MediCare</h3>
+                  <p class="product-text">Figma Template</p>
+                  <div class="product-price-wrapper">
+                    <p class="product-price">$18.00</p>
+                    <span class="product-cart button">
+                      <svg class="icon-cart" width="24" height="24">
+                        <use href="./img/icons/sprite.svg#icon-cart"></use>
+                      </svg>
+                    </span>
+                  </div>
+                </a>
+              </article>
+            </li>
+            <li class="catalog-item">
+              <article class="catalog-card">
+                <a href="#" class="catalog-link">
+                  <img
+                    class="image"
+                    src="./img/catalog/up-news.webp"
+                    alt="Figma template for UpNews"
+                    width="302"
+                    height="260"
+                  />
+                  <h3 class="product-title">UpNews</h3>
+                  <p class="product-text">Figma Template</p>
+                  <div class="product-price-wrapper">
+                    <p class="product-price">$12.00</p>
+                    <span class="product-cart button">
+                      <svg class="icon-cart" width="24" height="24">
+                        <use href="./img/icons/sprite.svg#icon-cart"></use>
+                      </svg>
+                    </span>
+                  </div>
+                </a>
+              </article>
+            </li>
+          </ul>
+          <div class="catalog-pagination">
+            <button type="button" class="catalog-pagination-arrow button">
+              <svg class="icon-arrow-small" width="16" height="16">
+                <use href="./img/icons/sprite.svg#icon-arrow-left-small"></use>
+              </svg>
+            </button>
+            <ol class="catalog-pagination-list">
+              <li class="catalog-pagination-item">
+                <button class="catalog-pagination-btn button">01</button>
+              </li>
+              <li class="catalog-pagination-item">
+                <button class="catalog-pagination-btn button">02</button>
+              </li>
+              <li class="catalog-pagination-item">
+                <button class="catalog-pagination-btn button">03</button>
+              </li>
+              <li class="catalog-pagination-item">
+                <button class="catalog-pagination-btn button">...</button>
+              </li>
+              <li class="catalog-pagination-item">
+                <button class="catalog-pagination-btn button">10</button>
+              </li>
+            </ol>
+            <button type="button" class="catalog-pagination-arrow button">
+              <svg class="icon-arrow-small" width="16" height="16">
+                <use href="./img/icons/sprite.svg#icon-arrow-right-small"></use>
+              </svg>
+            </button>
+          </div>
+        </div>
+      </section>
+      <section class="product-section">
+        <div class="container">
+          <div class="product-wrapper">
+            <h2 class="title">PRODUCT</h2>
+            <p class="subtitle">
+              Elevate Your Project <br />
+              with Premium Digital Assets
+            </p>
+            <button class="shop-now-btn button" type="button">Shop Now</button>
+          </div>
+        </div>
+      </section>
     </main>
     <footer class="catalog-footer">
       <div class="container">
         <h2 hidden>Footer navigation</h2>
         <div class="footer-head catalog">
           <div class="footer-logo-wrapper">
-            <a href="#" class="logo-link">
+            <a href="./index.html" class="logo-link">
               <img
                 class="logo-image"
-                src="./img/logo-blue.webp"
+                src="./img/icons/logo-blue.svg"
                 alt="Pixmart logo"
                 width="300"
                 height="58"
@@ -415,70 +495,72 @@
             </div>
           </div>
           <div class="footer-navigation-wrapper">
-            <div class="footer-nav">
-              <h3 class="subtitle">Company</h3>
-              <nav class="footer-navigation">
-                <ul class="footer-nav-list">
-                  <li class="footer-nav-item">
-                    <a href="./index.html" class="footer-link">Homepage v3</a>
+            <div class="footer-links-wrapper">
+              <div class="footer-nav">
+                <h3 class="subtitle">Company</h3>
+                <nav class="footer-navigation">
+                  <ul class="footer-nav-list">
+                    <li class="footer-nav-item">
+                      <a href="./index.html" class="footer-link">Homepage v3</a>
+                    </li>
+                    <li class="footer-nav-item">
+                      <a href="#" class="footer-link">About Us</a>
+                    </li>
+                    <li class="footer-nav-item">
+                      <a href="#" class="footer-link">Creators</a>
+                    </li>
+                    <li class="footer-nav-item">
+                      <a href="#" class="footer-link">Blog Articles</a>
+                    </li>
+                  </ul>
+                </nav>
+              </div>
+              <div class="footer-products">
+                <h3 class="subtitle">Products</h3>
+                <ul class="footer-products-list">
+                  <li class="footer-products-item">
+                    <a href="#" class="footer-link">Website</a>
                   </li>
-                  <li class="footer-nav-item">
-                    <a href="#" class="footer-link">About Us</a>
+                  <li class="footer-company-info-item">
+                    <a href="#" class="footer-link">Mobile App</a>
                   </li>
-                  <li class="footer-nav-item">
-                    <a href="#" class="footer-link">Creators</a>
+                  <li class="footer-company-info-item">
+                    <a href="#" class="footer-link">Social Media Feeds</a>
                   </li>
-                  <li class="footer-nav-item">
-                    <a href="#" class="footer-link">Blog Articles</a>
+                  <li class="footer-company-info-item">
+                    <a href="#" class="footer-link">Presentation</a>
+                  </li>
+                  <li class="footer-company-info-item">
+                    <a href="#" class="footer-link">Product Mockups</a>
+                  </li>
+                  <li class="footer-company-info-item">
+                    <a href="#" class="footer-link">Illustrations</a>
                   </li>
                 </ul>
-              </nav>
-            </div>
-            <div class="footer-products">
-              <h3 class="subtitle">Products</h3>
-              <ul class="footer-products-list">
-                <li class="footer-products-item">
-                  <a href="#" class="footer-link">Website</a>
-                </li>
-                <li class="footer-company-info-item">
-                  <a href="#" class="footer-link">Mobile App</a>
-                </li>
-                <li class="footer-company-info-item">
-                  <a href="#" class="footer-link">Social Media Feeds</a>
-                </li>
-                <li class="footer-company-info-item">
-                  <a href="#" class="footer-link">Presentation</a>
-                </li>
-                <li class="footer-company-info-item">
-                  <a href="#" class="footer-link">Product Mockups</a>
-                </li>
-                <li class="footer-company-info-item">
-                  <a href="#" class="footer-link">Illustrations</a>
-                </li>
-              </ul>
-            </div>
-            <div class="footer-account">
-              <h3 class="subtitle">Account</h3>
-              <ul class="footer-account-list">
-                <li class="footer-accoun-item">
-                  <a href="#" class="footer-link">Your Cart</a>
-                </li>
-                <li class="footer-products-item">
-                  <a href="#" class="footer-link">Check Out</a>
-                </li>
-                <li class="footer-products-item">
-                  <a href="#" class="footer-link">Refund Policy</a>
-                </li>
-                <li class="footer-products-item">
-                  <a href="#" class="footer-link">Company Policy</a>
-                </li>
-                <li class="footer-products-item">
-                  <a href="#" class="footer-link">Send A Message</a>
-                </li>
-                <li class="footer-products-item">
-                  <a href="#" class="footer-link">Customer Support</a>
-                </li>
-              </ul>
+              </div>
+              <div class="footer-account">
+                <h3 class="subtitle">Account</h3>
+                <ul class="footer-account-list">
+                  <li class="footer-accoun-item">
+                    <a href="#" class="footer-link">Your Cart</a>
+                  </li>
+                  <li class="footer-products-item">
+                    <a href="#" class="footer-link">Check Out</a>
+                  </li>
+                  <li class="footer-products-item">
+                    <a href="#" class="footer-link">Refund Policy</a>
+                  </li>
+                  <li class="footer-products-item">
+                    <a href="#" class="footer-link">Company Policy</a>
+                  </li>
+                  <li class="footer-products-item">
+                    <a href="#" class="footer-link">Send A Message</a>
+                  </li>
+                  <li class="footer-products-item">
+                    <a href="#" class="footer-link">Customer Support</a>
+                  </li>
+                </ul>
+              </div>
             </div>
             <div class="footer-subscribe">
               <form class="subscribe-form" action="#" method="get">
@@ -527,6 +609,6 @@
           </p>
         </div>
       </div>
-    </footer> 
-</body>
+    </footer>
+  </body>
 </html>

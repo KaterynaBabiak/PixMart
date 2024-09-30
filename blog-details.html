@@ -1,16 +1,50 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
+    <title>
+      
+    </title>
+    <meta
+      name="description"
+      content=""
+    />
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="icon" type="image/x-icon" href="/img/favicon.webp" />
-    <title>Pixmart</title>
+    <link
+      rel="icon"
+      type="image/png"
+      href="./favicon_io/android-chrome-512x512.png"
+      sizes="512x512"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      href="./favicon_io/android-chrome-192x192.png"
+      sizes="192x192"
+    />
+    <link
+      rel="apple-touch-icon"
+      type="image/png"
+      href="./favicon_io/apple-touch-icon.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      href="./favicon_io/favicon-32x32.png"
+      sizes="32x32"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      href="./favicon_io/favicon-16x16.png"
+      sizes="16x16"
+    />
+    <link rel="icon" type="image/png" href="./favicon_io/favicon.ico" />
     <link rel="stylesheet" href="./css/modern-normalize.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      rel="preconnect"
-      href="https://fonts.googleapis.com/css2?family=Libre+Franklin:ital,wght@0,100..900;1,100..900&family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Libre+Franklin:wght@100..900&family=Plus+Jakarta+Sans:wght@700&display=swap"
       rel="stylesheet"
     />
     <link rel="stylesheet" type="text/css" href="./css/styles.css" />
@@ -19,8 +53,13 @@
     <header class="header">
       <div class="header-section container">
         <div class="navigation-wrapper">
-          <a href="./index.html" class="logo">
-            Pixmart.
+          <a href="#" class="logo">
+            <img
+              src="./img/icons/logo-blue.svg"
+              alt="PixMart logotype"
+              width="80"
+              height="28"
+            />
           </a>
           <nav class="header-navigation">
             <ul class="list">
@@ -84,7 +123,7 @@
             </h1>
             <span class="label">TYPOGRAPHY</span>
             <img
-              class=""
+              class="image"
               src="./img/blog/blog-detail-hero.webp"
               alt=""
               width="1280"
@@ -196,9 +235,9 @@
         <div class="container">
           <div class="wrapper">
             <h2 class="subtitle">Related Articles</h2>
-            <a href="#" class="release-link">
+            <a href="#" class="explore-link">
               Explore All Articles
-              <svg class="icon-arrow" width="24" height="24">
+              <svg class="icon-arrow" width="16" height="16">
                 <use href="./img/icons/sprite.svg#icon-arrow-right"></use>
               </svg>
             </a>
@@ -207,60 +246,66 @@
             <li class="blog-item">
               <article class="blog-card">
                 <a href="" class="blog-link">
-                  <img
+                  <div class="img-wrapper">
+                    <img
                     class="image"
                     src="./img/blog/design-infographic.webp"
                     alt="Dark mode design infographic"
                     width="373"
                     height="272"
                   />
+                  <span class="label">BRANDING</span>
+                  </div>
                   <h3 class="card-title">
                     Best Practice for Dark Mode UI Design
                   </h3>
                   <time class="card-date" datetime="2024-05-06"
                     >6 MAY 2024</time
                   >
-                  <span class="label">BRANDING</span>
                 </a>
               </article>
             </li>
             <li class="blog-item">
               <article class="blog-card">
                 <a href="" class="blog-link">
-                  <img
+                  <div class="img-wrapper">
+                    <img
                     class="image"
                     src="./img/blog/color-inspirations.webp"
                     alt="Сolor palette inspiration guide"
                     width="373"
                     height="272"
                   />
+                  <span class="label">GRAPHIC DESIGN</span>
+                  </div>
                   <h3 class="card-title">
                     Looking for Color Inspirations for Your Food Business?
                   </h3>
                   <time class="card-date" datetime="2024-07-28"
                     >28 JULY 2024</time
                   >
-                  <span class="label">GRAPHIC DESIGN</span>
                 </a>
               </article>
             </li>
             <li class="blog-item">
               <article class="blog-card">
                 <a href="" class="blog-link">
-                  <img
+                  <div class="img-wrapper">
+                    <img
                     class="image"
                     src="./img/blog/presentation-templates.webp"
                     alt="Dark mode design infographic"
                     width="373"
                     height="272"
                   />
+                  <span class="label">DIGITAL MARKETING</span>
+                  </div>
                   <h3 class="card-title">
                     6 Most Recommended Dental Presentation Templates
                   </h3>
                   <time class="card-date" datetime="2024-06-17"
                     >17 JUNE 2024</time
                   >
-                  <span class="label">DIGITAL MARKETING</span>
                 </a>
               </article>
             </li>
@@ -273,10 +318,10 @@
         <h2 hidden>Footer navigation</h2>
         <div class="footer-head catalog">
           <div class="footer-logo-wrapper">
-            <a href="#" class="logo-link">
+            <a href="./index.html" class="logo-link">
               <img
                 class="logo-image"
-                src="./img/logo-blue.webp"
+                src="./img/icons/logo-blue.svg"
                 alt="Pixmart logo"
                 width="300"
                 height="58"
@@ -325,70 +370,72 @@
             </div>
           </div>
           <div class="footer-navigation-wrapper">
-            <div class="footer-nav">
-              <h3 class="subtitle">Company</h3>
-              <nav class="footer-navigation">
-                <ul class="footer-nav-list">
-                  <li class="footer-nav-item">
-                    <a href="./index.html" class="footer-link">Homepage v3</a>
+            <div class="footer-links-wrapper">
+              <div class="footer-nav">
+                <h3 class="subtitle">Company</h3>
+                <nav class="footer-navigation">
+                  <ul class="footer-nav-list">
+                    <li class="footer-nav-item">
+                      <a href="./index.html" class="footer-link">Homepage v3</a>
+                    </li>
+                    <li class="footer-nav-item">
+                      <a href="#" class="footer-link">About Us</a>
+                    </li>
+                    <li class="footer-nav-item">
+                      <a href="#" class="footer-link">Creators</a>
+                    </li>
+                    <li class="footer-nav-item">
+                      <a href="#" class="footer-link">Blog Articles</a>
+                    </li>
+                  </ul>
+                </nav>
+              </div>
+              <div class="footer-products">
+                <h3 class="subtitle">Products</h3>
+                <ul class="footer-products-list">
+                  <li class="footer-products-item">
+                    <a href="#" class="footer-link">Website</a>
                   </li>
-                  <li class="footer-nav-item">
-                    <a href="#" class="footer-link">About Us</a>
+                  <li class="footer-company-info-item">
+                    <a href="#" class="footer-link">Mobile App</a>
                   </li>
-                  <li class="footer-nav-item">
-                    <a href="#" class="footer-link">Creators</a>
+                  <li class="footer-company-info-item">
+                    <a href="#" class="footer-link">Social Media Feeds</a>
                   </li>
-                  <li class="footer-nav-item">
-                    <a href="#" class="footer-link">Blog Articles</a>
+                  <li class="footer-company-info-item">
+                    <a href="#" class="footer-link">Presentation</a>
+                  </li>
+                  <li class="footer-company-info-item">
+                    <a href="#" class="footer-link">Product Mockups</a>
+                  </li>
+                  <li class="footer-company-info-item">
+                    <a href="#" class="footer-link">Illustrations</a>
                   </li>
                 </ul>
-              </nav>
-            </div>
-            <div class="footer-products">
-              <h3 class="subtitle">Products</h3>
-              <ul class="footer-products-list">
-                <li class="footer-products-item">
-                  <a href="#" class="footer-link">Website</a>
-                </li>
-                <li class="footer-company-info-item">
-                  <a href="#" class="footer-link">Mobile App</a>
-                </li>
-                <li class="footer-company-info-item">
-                  <a href="#" class="footer-link">Social Media Feeds</a>
-                </li>
-                <li class="footer-company-info-item">
-                  <a href="#" class="footer-link">Presentation</a>
-                </li>
-                <li class="footer-company-info-item">
-                  <a href="#" class="footer-link">Product Mockups</a>
-                </li>
-                <li class="footer-company-info-item">
-                  <a href="#" class="footer-link">Illustrations</a>
-                </li>
-              </ul>
-            </div>
-            <div class="footer-account">
-              <h3 class="subtitle">Account</h3>
-              <ul class="footer-account-list">
-                <li class="footer-accoun-item">
-                  <a href="#" class="footer-link">Your Cart</a>
-                </li>
-                <li class="footer-products-item">
-                  <a href="#" class="footer-link">Check Out</a>
-                </li>
-                <li class="footer-products-item">
-                  <a href="#" class="footer-link">Refund Policy</a>
-                </li>
-                <li class="footer-products-item">
-                  <a href="#" class="footer-link">Company Policy</a>
-                </li>
-                <li class="footer-products-item">
-                  <a href="#" class="footer-link">Send A Message</a>
-                </li>
-                <li class="footer-products-item">
-                  <a href="#" class="footer-link">Customer Support</a>
-                </li>
-              </ul>
+              </div>
+              <div class="footer-account">
+                <h3 class="subtitle">Account</h3>
+                <ul class="footer-account-list">
+                  <li class="footer-accoun-item">
+                    <a href="#" class="footer-link">Your Cart</a>
+                  </li>
+                  <li class="footer-products-item">
+                    <a href="#" class="footer-link">Check Out</a>
+                  </li>
+                  <li class="footer-products-item">
+                    <a href="#" class="footer-link">Refund Policy</a>
+                  </li>
+                  <li class="footer-products-item">
+                    <a href="#" class="footer-link">Company Policy</a>
+                  </li>
+                  <li class="footer-products-item">
+                    <a href="#" class="footer-link">Send A Message</a>
+                  </li>
+                  <li class="footer-products-item">
+                    <a href="#" class="footer-link">Customer Support</a>
+                  </li>
+                </ul>
+              </div>
             </div>
             <div class="footer-subscribe">
               <form class="subscribe-form" action="#" method="get">

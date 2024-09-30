@@ -1,16 +1,45 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
+    <title></title>
+    <meta name="description" content="" />
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="icon" type="image/x-icon" href="/img/favicon.webp" />
-    <title>Pixmart</title>
+    <link
+      rel="icon"
+      type="image/png"
+      href="./favicon_io/android-chrome-512x512.png"
+      sizes="512x512"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      href="./favicon_io/android-chrome-192x192.png"
+      sizes="192x192"
+    />
+    <link
+      rel="apple-touch-icon"
+      type="image/png"
+      href="./favicon_io/apple-touch-icon.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      href="./favicon_io/favicon-32x32.png"
+      sizes="32x32"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      href="./favicon_io/favicon-16x16.png"
+      sizes="16x16"
+    />
+    <link rel="icon" type="image/png" href="./favicon_io/favicon.ico" />
     <link rel="stylesheet" href="./css/modern-normalize.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      rel="preconnect"
-      href="https://fonts.googleapis.com/css2?family=Libre+Franklin:ital,wght@0,100..900;1,100..900&family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Libre+Franklin:wght@100..900&family=Plus+Jakarta+Sans:wght@700&display=swap"
       rel="stylesheet"
     />
     <link rel="stylesheet" type="text/css" href="./css/styles.css" />
@@ -18,53 +47,59 @@
   <body>
     <header class="header">
       <div class="header-section container">
-          <div class="navigation-wrapper">
-              <a href="./index.html" class="logo">
-                  Pixmart.
-              </a>
-              <nav class="header-navigation">
-                  <ul class="list">
-                      <li class="item active-page">
-                          <a href="./about.html" class="link" title="about">About</a>
-                      </li>
-                      <li class="item products">
-                          <a href="./catalog.html" class="link" title="products">
-                              Products
-                          </a>
-                      </li>
-                      <li class="item creator">
-                          <a href="./creators.html" class="link" title="creators">
-                              Creators
-                              
-                          </a>
-                      </li>
-                      <li class="item">
-                          <a href="./blog.html" class="link" title="blog">Blog</a>
-                      </li>
-                      <li class="item">
-                          <a href="./contact.html" class="link" title="contact">Contact</a>
-                      </li>
-                  </ul>
-              </nav>
-          </div>
-          <ul class="action-list">
-              <li class="action-item">
-                  <button class="action-button user-btn" type="button">
-                      <svg class="user" width="24" height="24">
-                          <use href="./img/icons/sprite.svg#icon-user"></use>
-                      </svg>
-                  </button>
+        <div class="navigation-wrapper">
+          <a href="./index.html" class="logo">
+            <img
+              src="./img/icons/logo-blue.svg"
+              alt="PixMart logotype"
+              width="80"
+              height="28"
+            />
+          </a>
+          <nav class="header-navigation">
+            <ul class="list">
+              <li class="item active-page">
+                <a href="./about.html" class="link" title="about">About</a>
               </li>
-              <li class="action-item">
-                  <button class="action-button cart-btn" type="button">
-                      <svg class="cart" width="24" height="24">
-                          <use href="./img/icons/sprite.svg#icon-cart"></use>
-                      </svg>
-                  </button>
+              <li class="item products">
+                <a href="./catalog.html" class="link" title="products">
+                  Products
+                </a>
               </li>
-          </ul>            
+              <li class="item creator">
+                <a href="./creators.html" class="link" title="creators">
+                  Creators
+                </a>
+              </li>
+              <li class="item">
+                <a href="./blog.html" class="link" title="blog">Blog</a>
+              </li>
+              <li class="item">
+                <a href="./contact.html" class="link" title="contact"
+                  >Contact</a
+                >
+              </li>
+            </ul>
+          </nav>
+        </div>
+        <ul class="action-list">
+          <li class="action-item">
+            <button class="action-button user-btn" type="button">
+              <svg class="user" width="24" height="24">
+                <use href="./img/icons/sprite.svg#icon-user"></use>
+              </svg>
+            </button>
+          </li>
+          <li class="action-item">
+            <button class="action-button cart-btn" type="button">
+              <svg class="cart" width="24" height="24">
+                <use href="./img/icons/sprite.svg#icon-cart"></use>
+              </svg>
+            </button>
+          </li>
+        </ul>
       </div>
-  </header>
+    </header>
     <main>
       <section class="hero-section marketplace">
         <div class="container">
@@ -73,13 +108,52 @@
             to Utmost <span class="accent">Potential</span> with Us
           </h1>
           <h2 class="title">MARKETPLACE</h2>
-          <img
-            class="image"
-            src="./img/about/hero-about.webp"
-            alt="Collection of social media templates"
-            width="1280"
-            height="480"
-          />
+          <div class="wrapper">
+            <div class="gallery">
+              <img
+                class="image one"
+                src="./img/about/background-one.webp"
+                alt=""
+                width="520"
+                height="330"
+              />
+              <img
+                class="image two"
+                src="./img/about/background-two.webp"
+                alt=""
+                width="520"
+                height="330"
+              />
+              <img
+                class="image three"
+                src="./img/about/background-three.webp"
+                alt=""
+                width="520"
+                height="330"
+              />
+              <img
+                class="image four"
+                src="./img/about/background-four.webp"
+                alt=""
+                width="520"
+                height="330"
+              />
+              <img
+                class="image five"
+                src="./img/about/background-five.webp"
+                alt=""
+                width="520"
+                height="330"
+              />
+              <img
+                class="image six"
+                src="./img/about/background-six.webp"
+                alt=""
+                width="520"
+                height="330"
+              />
+            </div>
+          </div>
         </div>
       </section>
       <section class="about-section">
@@ -227,9 +301,15 @@
           <p class="subtitle">The Minds and Hearts <br />Behind Our Works</p>
           <ul class="team-list">
             <li class="team-item">
-              <article class="teamcard">
+              <article class="team-card">
                 <a href="#" class="team-link">
-                  <img class="image" src="" alt="" width="355" height="360" />
+                  <img
+                    class="image"
+                    src="./img/about/alice.webp"
+                    alt="Alice Johnson avatar"
+                    width="355"
+                    height="360"
+                  />
                   <h3 class="card-title">Alice Johnson</h3>
                   <p class="job-title">CEO & Founder</p>
                   <ul class="follow-list">
@@ -275,47 +355,69 @@
               </article>
             </li>
             <li class="team-item">
-              <article class="teamcard">
+              <article class="team-card">
                 <a href="#" class="team-link">
-                  <img class="image" src="" alt="" width="355" height="360" />
+                  <img
+                    class="image"
+                    src="./img/about/bob.webp"
+                    alt="Bob Smith avatar"
+                    width="355"
+                    height="360"
+                  />
                   <h3 class="card-title">Bob Smith</h3>
                   <p class="job-title">Chief Technology Officer</p>
                   <ul class="follow-list">
                     <li class="follow-item">
-                        <a class="follow-link"
+                      <a
+                        class="followlink"
                         href="https://x.com/?lang=uk"
-                        target="_blank">
-                            <svg class="icon-socialmedia" width="24" height="24">
-                                <use href="./img/icons/sprite.svg#icon-twitter"></use>
-                            </svg>
-                        </a>
+                        target="_blank"
+                      >
+                        <svg class="icon-socialmedia" width="24" height="24">
+                          <use href="./img/icons/sprite.svg#icon-twitter"></use>
+                        </svg>
+                      </a>
                     </li>
                     <li class="follow-item">
-                        <a class="follow-link"
+                      <a
+                        class="follow-link"
                         href="https://www.instagram.com/"
-                        target="_blank">
-                            <svg class="icon-socialmedia" width="24" height="24">
-                                <use href="./img/icons/sprite.svg#icon-instagram"></use>
-                            </svg>
-                        </a>
+                        target="_blank"
+                      >
+                        <svg class="icon-socialmedia" width="24" height="24">
+                          <use
+                            href="./img/icons/sprite.svg#icon-instagram"
+                          ></use>
+                        </svg>
+                      </a>
                     </li>
                     <li class="follow-item">
-                        <a class="follow-link"
-                        href="https://www.facebook.com/" 
-                        target="_blank">
-                            <svg class="icon-socialmedia" width="24" height="24">
-                                <use href="./img/icons/sprite.svg#icon-facebook"></use>
-                            </svg>
-                        </a>
+                      <a
+                        class="follow-link"
+                        href="https://www.facebook.com/"
+                        target="_blank"
+                      >
+                        <svg class="icon-socialmedia" width="24" height="24">
+                          <use
+                            href="./img/icons/sprite.svg#icon-facebook"
+                          ></use>
+                        </svg>
+                      </a>
                     </li>
                   </ul>
                 </a>
               </article>
             </li>
             <li class="team-item">
-              <article class="teamcard">
+              <article class="team-card">
                 <a href="#" class="team-link">
-                  <img class="image" src="" alt="" width="355" height="360" />
+                  <img
+                    class="image"
+                    src="./img/about/cara.webp"
+                    alt="Cara Stevens avatar"
+                    width="355"
+                    height="360"
+                  />
                   <h3 class="card-title">Cara Stevens</h3>
                   <p class="job-title">Head of Creator Relations</p>
                   <ul class="follow-list">
@@ -361,33 +463,233 @@
               </article>
             </li>
             <li class="team-item">
-              <article class="teamcard">
+              <article class="team-card">
                 <a href="#" class="team-link">
-                  <img class="image" src="" alt="" width="355" height="360" />
+                  <img
+                    class="image"
+                    src="./img/about/dan.webp"
+                    alt="Dan Roberts avatar"
+                    width="355"
+                    height="360"
+                  />
                   <h3 class="card-title">Dan Roberts</h3>
                   <p class="job-title">Lead Product Designer</p>
+                  <ul class="follow-list">
+                    <li class="follow-item">
+                      <a
+                        class="follow-link"
+                        href="https://x.com/?lang=uk"
+                        target="_blank"
+                      >
+                        <svg class="icon-socialmedia" width="24" height="24">
+                          <use href="./img/icons/sprite.svg#icon-twitter"></use>
+                        </svg>
+                      </a>
+                    </li>
+                    <li class="follow-item">
+                      <a
+                        class="follow-link"
+                        href="https://www.instagram.com/"
+                        target="_blank"
+                      >
+                        <svg class="icon-socialmedia" width="24" height="24">
+                          <use
+                            href="./img/icons/sprite.svg#icon-instagram"
+                          ></use>
+                        </svg>
+                      </a>
+                    </li>
+                    <li class="follow-item">
+                      <a
+                        class="follow-link"
+                        href="https://www.facebook.com/"
+                        target="_blank"
+                      >
+                        <svg class="icon-socialmedia" width="24" height="24">
+                          <use
+                            href="./img/icons/sprite.svg#icon-facebook"
+                          ></use>
+                        </svg>
+                      </a>
+                    </li>
+                  </ul>
                 </a>
               </article>
             </li>
             <li class="team-item">
-              <article class="teamcard">
+              <article class="team-card">
                 <a href="#" class="team-link">
-                  <img class="image" src="" alt="" width="355" height="360" />
+                  <img
+                    class="image"
+                    src="./img/about/eva.webp"
+                    alt="Eva Green avatar"
+                    width="355"
+                    height="360"
+                  />
                   <h3 class="card-title">Eva Green</h3>
                   <p class="job-title">Marketing Director</p>
+                  <ul class="follow-list">
+                    <li class="follow-item">
+                      <a
+                        class="follow-link"
+                        href="https://x.com/?lang=uk"
+                        target="_blank"
+                      >
+                        <svg class="icon-socialmedia" width="24" height="24">
+                          <use href="./img/icons/sprite.svg#icon-twitter"></use>
+                        </svg>
+                      </a>
+                    </li>
+                    <li class="follow-item">
+                      <a
+                        class="follow-link"
+                        href="https://www.instagram.com/"
+                        target="_blank"
+                      >
+                        <svg class="icon-socialmedia" width="24" height="24">
+                          <use
+                            href="./img/icons/sprite.svg#icon-instagram"
+                          ></use>
+                        </svg>
+                      </a>
+                    </li>
+                    <li class="follow-item">
+                      <a
+                        class="follow-link"
+                        href="https://www.facebook.com/"
+                        target="_blank"
+                      >
+                        <svg class="icon-socialmedia" width="24" height="24">
+                          <use
+                            href="./img/icons/sprite.svg#icon-facebook"
+                          ></use>
+                        </svg>
+                      </a>
+                    </li>
+                  </ul>
                 </a>
               </article>
             </li>
             <li class="team-item">
-              <article class="teamcard">
+              <article class="team-card">
                 <a href="#" class="team-link">
-                  <img class="image" src="" alt="" width="355" height="360" />
+                  <img
+                    class="image"
+                    src="./img/about/felix.webp"
+                    alt="Felix Kingston avatar"
+                    width="355"
+                    height="360"
+                  />
                   <h3 class="card-title">Felix Kingston</h3>
                   <p class="job-title">Customer Support Lead</p>
+                  <ul class="follow-list">
+                    <li class="follow-item">
+                      <a
+                        class="follow-link"
+                        href="https://x.com/?lang=uk"
+                        target="_blank"
+                      >
+                        <svg class="icon-socialmedia" width="24" height="24">
+                          <use href="./img/icons/sprite.svg#icon-twitter"></use>
+                        </svg>
+                      </a>
+                    </li>
+                    <li class="follow-item">
+                      <a
+                        class="follow-link"
+                        href="https://www.instagram.com/"
+                        target="_blank"
+                      >
+                        <svg class="icon-socialmedia" width="24" height="24">
+                          <use
+                            href="./img/icons/sprite.svg#icon-instagram"
+                          ></use>
+                        </svg>
+                      </a>
+                    </li>
+                    <li class="follow-item">
+                      <a
+                        class="follow-link"
+                        href="https://www.facebook.com/"
+                        target="_blank"
+                      >
+                        <svg class="icon-socialmedia" width="24" height="24">
+                          <use
+                            href="./img/icons/sprite.svg#icon-facebook"
+                          ></use>
+                        </svg>
+                      </a>
+                    </li>
+                  </ul>
                 </a>
               </article>
             </li>
           </ul>
+        </div>
+      </section>
+      <section class="awards-section">
+        <div class="container">
+          <div class="wrapper">
+            <h2 class="title">AWARDS</h2>
+            <p class="subtitle">Celebrating Our Excellence</p>
+            <p class="text">
+              Discover the recognition and accolades earned by our top-quality
+              design assets, validating our design excellence and reliability.
+            </p>
+          </div>
+          <ul class="awards-list">
+            <li class="awards-item">
+              <div class="wrapper">
+                <time datetime="2023" class="awards-date">2023</time>
+                <h3 class="card-heading">Text</h3>
+              </div>
+            </li>
+            <li class="awards-item">
+              <div class="wrapper">
+                <time datetime="2022" class="awards-date">2022</time>
+                <h3 class="card-heading">Best Customer Service Award</h3>
+              </div>
+            </li>
+            <li class="awards-item">
+              <div class="wrapper">
+                <time datetime="2021" class="awards-date">2021</time>
+                <h3 class="card-heading">Digital Marketplace of the Year</h3>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </section>
+      <section class="digital-section">
+        <div class="container">
+          <div class="wrapper">
+            <h2 hidden>Digital Revolution</h2>
+            <p class="subtitle">
+              Join Our Digital
+Creative Revolution
+            </p>
+            <p class="text">
+              Share your talent with the world and become a part of our ever-growing community of creators.
+            </p>
+            <button class="become-btn button" type="button">Become A Creator</button>
+          </div>
+          <figure class="gallery">
+            <img class="image one"
+            src="./img/about/digital-one.webp" 
+            alt=""
+            width="576" height="400">
+            <img class="image two"
+            src="./img/about/digital-two.webp" 
+            alt=""
+            width="576" height="400">
+            <img class="image three"
+            src="./img/about/digital-three.webp" 
+            alt=""
+            width="576" height="400">
+            <img class="image four"
+            src="./img/about/digital-four.webp" 
+            alt=""
+            width="576" height="400">
+          </figure>
         </div>
       </section>
     </main>
@@ -420,14 +722,15 @@
         </div>
         <div class="footer-head blog">
           <div class="footer-logo-wrapper">
-            <a href="#" class="logo-link">
+            <a href="./index.html" class="logo-link">
               <img
                 class="logo-image"
-                src="./img/logo-blue.webp"
+                src="./img/icons/logo-blue.svg"
                 alt="Pixmart logo"
                 width="300"
                 height="58"
               />
+            </a>
             </a>
             <p class="footer-text">
               Your premium digital assets solution with high quality and
